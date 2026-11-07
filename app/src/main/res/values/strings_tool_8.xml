@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool8_add_files">Add Files</string>
+    <string name="tool8_add_folder">Add Folder</string>
+    <string name="tool8_picker_hint">Add multiple files and/or a folder (up to 5000 items, max 1.5 GB total).</string>
+    <string name="tool8_items_summary">%1$d items • %2$s</string>
+    <string name="tool8_output_name_label">ZIP Archive Name</string>
+    <string name="tool8_compression_mode">Compression Mode</string>
+    <string name="tool8_compression_normal">Normal (Deflated - smaller size)</string>
+    <string name="tool8_compression_store">Store (No compression - faster)</string>
+    <string name="tool8_start_button">Create ZIP Archive</string>
+    <string name="tool8_unreadable_title">Unreadable Files Detected</string>
+    <string name="tool8_unreadable_desc">The following items could not be accessed. Do you want to continue without them?</string>
+    <string name="tool8_continue_without">Continue Without Them</string>
+    <string name="tool8_cancel_archive">Cancel</string>
+    <string name="tool8_result_title">ZIP Archive Created</string>
+    <string name="tool8_archive_size">Archive Size</string>
+    <string name="tool8_entries_count">Total Entries</string>
+    <string name="tool8_input_size">Original Input Size</string>
+    <string name="tool8_compression_saved">Space Saved</string>
+    <string name="tool8_error_limit_entries">Cannot add more items: maximum limit of 5000 items exceeded.</string>
+    <string name="tool8_error_limit_size">Cannot add items: total size exceeds 1.5 GB limit.</string>
+    <string name="tool8_clear_all">Clear All</string>
+</resources>

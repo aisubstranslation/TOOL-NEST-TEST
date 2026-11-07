@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool2_mode_percent">فیصد موڈ</string>
+    <string name="tool2_mode_dimensions">درست لمبائی و چوڑائی</string>
+    <string name="tool2_percent_slider">اسکیل فیصد: %1$d%%</string>
+    <string name="tool2_width">چوڑائی (پکسلز)</string>
+    <string name="tool2_height">لمبائی (پکسلز)</string>
+    <string name="tool2_lock_aspect">تناسب برقرار رکھیں</string>
+    <string name="tool2_stretch_switch">کھینچیں (بگاڑ کی اجازت دیں)</string>
+    <string name="tool2_preset_25">25%</string>
+    <string name="tool2_preset_50">50%</string>
+    <string name="tool2_preset_75">75%</string>
+    <string name="tool2_preset_1080">1080p لمبا کنارہ</string>
+    <string name="tool2_preset_720">720p لمبا کنارہ</string>
+    <string name="tool2_target_preview">متوقع سائز: %1$d × %2$d px (%3$.1f MP)</string>
+    <string name="tool2_error_dimensions">پیمائش 0 سے بڑی اور 48 میگا پکسلز سے کم ہونی چاہیے۔</string>
+    <string name="tool2_start_button">تصاویر کا سائز بدلیں</string>
+</resources>

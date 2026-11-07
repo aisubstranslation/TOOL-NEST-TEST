@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool10_picker_title">पीडीएफ फाइलें चुनें</string>
+    <string name="tool10_picker_subtitle">2 या अधिक पीडीएफ चुनें (अधिकतम 20 फाइलें, कुल 300 MB)</string>
+    <string name="tool10_add_more">और पीडीएफ जोड़ें</string>
+    <string name="tool10_move_up">ऊपर करें</string>
+    <string name="tool10_move_down">नीचे करें</string>
+    <string name="tool10_file_count_header">%1$d फाइलें चयनित हैं (%2$s)</string>
+    <string name="tool10_btn_merge">पीडीएफ मर्ज करें</string>
+    <string name="tool10_merging">पीडीएफ फाइलें जोड़ी जा रही हैं…</string>
+    <string name="tool10_success_title">पीडीएफ सफलतापूर्वक मर्ज हो गईं</string>
+    <string name="tool10_btn_save">पीडीएफ सहेजें</string>
+    <string name="tool10_btn_share">शेयर करें</string>
+    <string name="tool10_btn_open">खोलें</string>
+    <string name="tool10_error_minimum_files">मर्ज करने के लिए कम से कम 2 पीडीएफ फाइलें चुनें।</string>
+    <string name="tool10_error_max_files">एक बार में अधिकतम 20 पीडीएफ फाइलें मर्ज की जा सकती हैं।</string>
+    <string name="tool10_error_max_size">कुल पीडीएफ आकार 300 MB की सीमा से अधिक है।</string>
+</resources>

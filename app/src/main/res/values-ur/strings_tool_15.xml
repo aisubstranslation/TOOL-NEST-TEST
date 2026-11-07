@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool15_select_pdf">پی ڈی ایف منتخب کریں</string>
+    <string name="tool15_pages_count">%1$d صفحات</string>
+    <string name="tool15_select_all">تمام</string>
+    <string name="tool15_select_odd">طاق</string>
+    <string name="tool15_select_even">جفت</string>
+    <string name="tool15_select_custom">مخصوص</string>
+    <string name="tool15_custom_range_placeholder">مثلاً 1-3, 5, 8</string>
+    <string name="tool15_apply_range">لاگو کریں</string>
+    <string name="tool15_selected_count">%1$d صفحات منتخب</string>
+    <string name="tool15_rotate_cw">90° دائیں</string>
+    <string name="tool15_rotate_180">180°</string>
+    <string name="tool15_rotate_ccw">90° بائیں</string>
+    <string name="tool15_reset">ری سیٹ</string>
+    <string name="tool15_page_label">صفحہ %1$d</string>
+    <string name="tool15_btn_rotate">تبدیلیاں محفوظ کریں</string>
+    <string name="tool15_processing">صفحات گھمائے جا رہے ہیں…</string>
+    <string name="tool15_success_title">پی ڈی ایف کامیابی سے گھمائی گئی</string>
+    <string name="tool15_btn_save">پی ڈی ایف محفوظ کریں</string>
+    <string name="tool15_btn_share">شیئر کریں</string>
+    <string name="tool15_btn_open">کھولیں</string>
+</resources>

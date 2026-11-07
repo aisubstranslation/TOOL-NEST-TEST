@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool4_select_image">Select Image to Crop</string>
+    <string name="tool4_picker_hint">Pick a photo to crop and adjust aspect ratios (JPEG, PNG, WebP up to 50 MB / 48 MP).</string>
+    <string name="tool4_aspect_ratio">Aspect Ratio</string>
+    <string name="tool4_aspect_free">Free</string>
+    <string name="tool4_aspect_1_1">1:1</string>
+    <string name="tool4_aspect_4_3">4:3</string>
+    <string name="tool4_aspect_3_4">3:4</string>
+    <string name="tool4_aspect_16_9">16:9</string>
+    <string name="tool4_aspect_9_16">9:16</string>
+    <string name="tool4_undo">Undo</string>
+    <string name="tool4_redo">Redo</string>
+    <string name="tool4_reset">Reset</string>
+    <string name="tool4_save_button">Crop and Save</string>
+    <string name="tool4_output_format">Output Format</string>
+    <string name="tool4_quality">Quality</string>
+    <string name="tool4_discard_dialog_title">Discard Changes?</string>
+    <string name="tool4_discard_dialog_message">You have unsaved crop changes. Do you want to discard them?</string>
+    <string name="tool4_discard_confirm">Discard</string>
+    <string name="tool4_discard_cancel">Keep Editing</string>
+    <string name="tool4_crop_dimensions">Crop: %1$d × %2$d px</string>
+</resources>

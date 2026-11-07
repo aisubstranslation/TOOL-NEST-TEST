@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool9_type_text">Text</string>
+    <string name="tool9_type_url">URL</string>
+    <string name="tool9_type_wifi">Wi-Fi</string>
+    <string name="tool9_type_contact">Contact</string>
+    <string name="tool9_type_email">Email</string>
+    <string name="tool9_type_phone">Phone</string>
+    <string name="tool9_input_text_label">Text Content</string>
+    <string name="tool9_input_url_label">Website Address</string>
+    <string name="tool9_url_prepended_hint">Added \'https://\' scheme automatically</string>
+    <string name="tool9_wifi_ssid_label">Network Name (SSID)</string>
+    <string name="tool9_wifi_pass_label">Password</string>
+    <string name="tool9_wifi_sec_label">Security Type</string>
+    <string name="tool9_wifi_hidden_label">Hidden Network</string>
+    <string name="tool9_contact_name_label">Full Name</string>
+    <string name="tool9_contact_phone_label">Phone</string>
+    <string name="tool9_contact_email_label">Email</string>
+    <string name="tool9_contact_org_label">Organization</string>
+    <string name="tool9_contact_url_label">Website</string>
+    <string name="tool9_email_to_label">Recipient Email</string>
+    <string name="tool9_email_subj_label">Subject</string>
+    <string name="tool9_email_body_label">Message Body</string>
+    <string name="tool9_phone_num_label">Phone Number</string>
+    <string name="tool9_privacy_notice">Privacy notice: All QR codes are generated 100% on-device. Wi-Fi passwords and contact details are never logged in history or sent anywhere.</string>
+    <string name="tool9_size_label">Resolution</string>
+    <string name="tool9_ec_label">Error Correction</string>
+    <string name="tool9_color_palette">Color Theme</string>
+    <string name="tool9_verified_badge">Verified: decodes correctly</string>
+    <string name="tool9_unverified_badge">Verification failed: scanners may not read this code</string>
+    <string name="tool9_warning_inverted">Warning: Inverted QR codes (light code on dark background) cannot be read by some scanner apps.</string>
+    <string name="tool9_warning_contrast">Warning: Low color contrast may cause scanning failures.</string>
+    <string name="tool9_btn_save_png">Save PNG</string>
+    <string name="tool9_btn_save_gallery">Save to Gallery</string>
+    <string name="tool9_btn_share">Share</string>
+    <string name="tool9_btn_copy_text">Copy Content</string>
+    <string name="tool9_text_copied">Content copied to clipboard</string>
+    <string name="tool9_saved_gallery">Saved to Pictures/TOOLSNEST</string>
+    <string name="tool9_warning_unverified_banner">This code could not be verified. Test it with your scanner before using it.</string>
+    <string name="tool9_save_success">QR code saved successfully</string>
+</resources>

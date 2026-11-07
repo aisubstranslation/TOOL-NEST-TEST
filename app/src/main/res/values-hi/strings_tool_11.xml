@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool11_picker_title">विभाजित करने के लिए पीडीएफ चुनें</string>
+    <string name="tool11_picker_subtitle">150 MB तक के पीडीएफ दस्तावेज़</string>
+    <string name="tool11_pages_count">%1$d पृष्ठ</string>
+    <string name="tool11_mode_extract">पृष्ठ निकालें</string>
+    <string name="tool11_mode_all_pages">सभी अलग पृष्ठ</string>
+    <string name="tool11_mode_by_ranges">कस्टम श्रेणियां</string>
+    <string name="tool11_extract_hint">चयनित पृष्ठों को एक नए पीडीएफ दस्तावेज़ में निकालें।</string>
+    <string name="tool11_ranges_hint">अलग-अलग श्रेणियों के अनुसार अलग पीडीएफ बनाएं (जैसे 1-3, 4-7)।</string>
+    <string name="tool11_page_range_label">पृष्ठ श्रेणी</string>
+    <string name="tool11_page_range_placeholder">जैसे 1-3, 5, 8</string>
+    <string name="tool11_btn_split">पीडीएफ विभाजित करें</string>
+    <string name="tool11_btn_extract">पृष्ठ निकालें</string>
+    <string name="tool11_processing">पीडीएफ विभाजित हो रही है…</string>
+    <string name="tool11_success_title">पीडीएफ सफलतापूर्वक विभाजित हो गई</string>
+    <string name="tool11_success_desc_multi">%1$d पीडीएफ फाइलें तैयार की गईं।</string>
+    <string name="tool11_btn_save_pdf">पीडीएफ सहेजें</string>
+    <string name="tool11_btn_save_zip">सभी ज़िप के रूप में सहेजें</string>
+    <string name="tool11_btn_save_folder">फ़ोल्डर में सहेजें</string>
+    <string name="tool11_btn_share_all">सभी शेयर करें</string>
+    <string name="tool11_btn_share">शेयर करें</string>
+    <string name="tool11_btn_open">खोलें</string>
+    <string name="tool11_folder_save_success">%1$d फाइलें फ़ोल्डर में सहेजी गईं</string>
+    <string name="tool11_error_empty_range">कृपया एक वैध पृष्ठ श्रेणी दर्ज करें।</string>
+</resources>

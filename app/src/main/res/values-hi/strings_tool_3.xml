@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool3_select_format">लक्षित प्रारूप</string>
+    <string name="tool3_quality">गुणवत्ता: %1$d%%</string>
+    <string name="tool3_bg_color">पारदर्शिता के लिए पृष्ठभूमि का रंग</string>
+    <string name="tool3_bg_color_note">JPEG पारदर्शिता का समर्थन नहीं करता। पारदर्शी हिस्से इस रंग से भरे जाएंगे।</string>
+    <string name="tool3_color_custom">हेक्स कोड</string>
+    <string name="tool3_start_button">छवियां कनवर्ट करें</string>
+</resources>

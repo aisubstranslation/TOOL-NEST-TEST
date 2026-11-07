@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool4_select_image">काटने के लिए छवि चुनें</string>
+    <string name="tool4_picker_hint">क्रॉप करने के लिए फोटो चुनें (JPEG, PNG, WebP अधिकतम 50 MB / 48 MP)।</string>
+    <string name="tool4_aspect_ratio">पहलू अनुपात</string>
+    <string name="tool4_aspect_free">मुक्त</string>
+    <string name="tool4_aspect_1_1">1:1</string>
+    <string name="tool4_aspect_4_3">4:3</string>
+    <string name="tool4_aspect_3_4">3:4</string>
+    <string name="tool4_aspect_16_9">16:9</string>
+    <string name="tool4_aspect_9_16">9:16</string>
+    <string name="tool4_undo">पूर्ववत करें</string>
+    <string name="tool4_redo">फिर से करें</string>
+    <string name="tool4_reset">रीसेट करें</string>
+    <string name="tool4_save_button">क्रॉप करें और सहेजें</string>
+    <string name="tool4_output_format">आउटपुट प्रारूप</string>
+    <string name="tool4_quality">गुणवत्ता</string>
+    <string name="tool4_discard_dialog_title">परिवर्तन छोड़ें?</string>
+    <string name="tool4_discard_dialog_message">आपके पास असहेजे गए क्रॉप संपादन हैं। क्या आप उन्हें छोड़ना चाहते हैं?</string>
+    <string name="tool4_discard_confirm">छोड़ें</string>
+    <string name="tool4_discard_cancel">संपादन जारी रखें</string>
+    <string name="tool4_crop_dimensions">क्रॉप: %1$d × %2$d px</string>
+</resources>

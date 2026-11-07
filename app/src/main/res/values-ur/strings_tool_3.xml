@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool3_select_format">مطلوبہ فارمیٹ</string>
+    <string name="tool3_quality">کوالٹی: %1$d%%</string>
+    <string name="tool3_bg_color">شفافیت کے لیے پس منظر کا رنگ</string>
+    <string name="tool3_bg_color_note">JPEG شفافیت کو سپورٹ نہیں کرتا۔ شفاف حصے اس رنگ سے بھرے جائیں گے۔</string>
+    <string name="tool3_color_custom">ہیکس کوڈ</string>
+    <string name="tool3_start_button">تصاویر کنورٹ کریں</string>
+</resources>

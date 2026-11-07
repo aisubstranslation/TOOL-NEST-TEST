@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool5_before_title">Detected Metadata in Original</string>
+    <string name="tool5_after_title">Verification After Cleaning</string>
+    <string name="tool5_gps_present">GPS Location coordinates present</string>
+    <string name="tool5_camera_info">Camera hardware &amp; model tags</string>
+    <string name="tool5_ai_markers">Possible AI-generation / content credential markers detected</string>
+    <string name="tool5_clean_notice">No metadata detected</string>
+    <string name="tool5_removed_status">Removed successfully</string>
+    <string name="tool5_honest_notice">Honest Notice: This tool strips metadata tags (EXIF, GPS, XMP, comments, C2PA) by re-encoding pixel data. It cannot un-edit an image or remove watermarks embedded inside the pixels themselves.</string>
+    <string name="tool5_start_button">Strip Metadata &amp; Save</string>
+</resources>

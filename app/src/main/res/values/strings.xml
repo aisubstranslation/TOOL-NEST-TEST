@@ -1,0 +1,223 @@
+<resources>
+    <!-- App & Navigation -->
+    <string name="app_name">TOOLSNEST</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Categories -->
+    <string name="category_all">All</string>
+    <string name="category_image">Image</string>
+    <string name="category_files">Files</string>
+    <string name="category_pdf">PDF</string>
+    <string name="category_video_audio">Video &amp; Audio</string>
+
+    <!-- Tool 1: Image Compressor -->
+    <string name="tool1_name">Image Compressor</string>
+    <string name="tool1_desc">Reduce image file size while keeping visual quality</string>
+
+    <!-- Tool 2: Image Resizer -->
+    <string name="tool2_name">Image Resizer</string>
+    <string name="tool2_desc">Change image dimensions by pixels or percentage</string>
+
+    <!-- Tool 3: Image Converter -->
+    <string name="tool3_name">Image Converter</string>
+    <string name="tool3_desc">Convert between PNG, JPEG, and WebP formats</string>
+
+    <!-- Tool 4: Image Cropper -->
+    <string name="tool4_name">Image Cropper</string>
+    <string name="tool4_desc">Crop images to custom or fixed aspect ratios</string>
+
+    <!-- Tool 5: Remove Image Metadata -->
+    <string name="tool5_name">Remove Image Metadata</string>
+    <string name="tool5_desc">Strip EXIF, GPS location, and camera metadata</string>
+
+    <!-- Tool 6: File Information -->
+    <string name="tool6_name">File Information</string>
+    <string name="tool6_desc">View detailed file properties, MIME type, and size</string>
+
+    <!-- Tool 7: SHA-256 Hash Generator -->
+    <string name="tool7_name">SHA-256 Hash Generator</string>
+    <string name="tool7_desc">Calculate cryptographic checksum to verify integrity</string>
+
+    <!-- Tool 8: ZIP Creator -->
+    <string name="tool8_name">ZIP Creator</string>
+    <string name="tool8_desc">Compress multiple files into a single ZIP archive</string>
+
+    <!-- Tool 9: QR Code Generator -->
+    <string name="tool9_name">QR Code Generator</string>
+    <string name="tool9_desc">Create QR codes from text, links, or contact data</string>
+
+    <!-- Tool 10: PDF Merge -->
+    <string name="tool10_name">PDF Merge</string>
+    <string name="tool10_desc">Combine multiple PDF documents into one file</string>
+
+    <!-- Tool 11: PDF Split -->
+    <string name="tool11_name">PDF Split</string>
+    <string name="tool11_desc">Extract specific pages or split PDF into pieces</string>
+
+    <!-- Tool 12: PDF Compressor -->
+    <string name="tool12_name">PDF Compressor</string>
+    <string name="tool12_desc">Optimize and reduce the file size of PDF documents</string>
+
+    <!-- Tool 13: PDF to Images -->
+    <string name="tool13_name">PDF to Images</string>
+    <string name="tool13_desc">Convert each PDF page into high-quality images</string>
+
+    <!-- Tool 14: Images to PDF -->
+    <string name="tool14_name">Images to PDF</string>
+    <string name="tool14_desc">Assemble multiple pictures into a single PDF document</string>
+
+    <!-- Tool 15: Rotate PDF -->
+    <string name="tool15_name">Rotate PDF</string>
+    <string name="tool15_desc">Rotate PDF pages 90, 180, or 270 degrees</string>
+
+    <!-- Tool 16: Video to Audio -->
+    <string name="tool16_name">Video to Audio</string>
+    <string name="tool16_desc">Extract audio tracks from video files</string>
+
+    <!-- Tool 17: Audio Converter -->
+    <string name="tool17_name">Audio Converter</string>
+    <string name="tool17_desc">Convert audio files between popular formats</string>
+
+    <!-- Tool 18: Video Compressor -->
+    <string name="tool18_name">Video Compressor</string>
+    <string name="tool18_desc">Reduce video file size with bitrate optimization</string>
+
+    <!-- Tool 19: Audio Trimmer -->
+    <string name="tool19_name">Audio Trimmer</string>
+    <string name="tool19_desc">Trim and cut audio clips to exact start and end points</string>
+
+    <!-- Tool 20: AI Background Remover -->
+    <string name="tool20_name">AI Background Remover</string>
+    <string name="tool20_desc">Remove photo backgrounds automatically on-device</string>
+
+    <!-- Tool Shell & Coming Soon Notice -->
+    <string name="tool_coming_soon">Coming Soon</string>
+    <string name="tool_coming_in_phase">Coming in Phase %1$d</string>
+    <string name="tool_phase_info">This tool will be available in Phase %1$d. Tools are built step-by-step to ensure high performance and offline reliability.</string>
+
+    <!-- Home Screen -->
+    <string name="home_search_placeholder">Search tools, actions (e.g. compress, pdf)...</string>
+    <string name="home_no_results_title">No matching tools found</string>
+    <string name="home_no_results_desc">Try searching for different terms like "image", "merge", or "hash".</string>
+    <string name="home_recent_tools">Recent Tools</string>
+    <string name="home_all_tools">All Tools</string>
+    <string name="home_tools_count">%1$d offline tools</string>
+
+    <!-- History Screen -->
+    <string name="history_title">History</string>
+    <string name="history_empty_title">No history yet</string>
+    <string name="history_empty_desc">Processed files and results will be listed here.</string>
+    <string name="history_clear_all">Clear All</string>
+    <string name="history_clear_confirm_title">Clear all history?</string>
+    <string name="history_clear_confirm_desc">This removes your history log from the app. Your saved output files on device will not be deleted.</string>
+    <string name="history_delete_item">Delete</string>
+    <string name="history_output_size">Output</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_theme_system">Follow System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_section_language">Language</string>
+    <string name="settings_language_system">System Default</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_ur">اردو (Urdu)</string>
+    <string name="settings_language_hi">हिन्दी (Hindi)</string>
+    <string name="settings_section_storage">Storage &amp; Files</string>
+    <string name="settings_prefix_title">File Naming Prefix</string>
+    <string name="settings_prefix_desc">Prefix added to generated files (e.g. TOOLSNEST_)</string>
+    <string name="settings_temp_cache_title">Temporary Working Files</string>
+    <string name="settings_temp_cache_desc">Clean up cache files created during processing</string>
+    <string name="settings_temp_cache_clear">Clear Temporary Files</string>
+    <string name="settings_temp_cache_cleared">Temporary files cleared (%1$s freed)</string>
+    <string name="settings_section_about">About &amp; Privacy</string>
+    <string name="settings_about_app_desc" formatted="false">100% offline, private utilities suite</string>
+    <string name="settings_about_version">Version 1.0</string>
+    <string name="settings_privacy_title">Privacy &amp; Security</string>
+    <string name="settings_privacy_desc">TOOLSNEST requires no internet permission. All tool processing is performed strictly on your device. No user files or telemetry ever leave your phone.</string>
+    <string name="settings_help_limits">Maximum file limits: Image 50 MB / 48 MP, PDF 150 MB, Video 1000 MB, Audio 500 MB. Video compressed to H.264 MP4. HDR videos may fail or look different.</string>
+    <string name="settings_help_background_note">Notice: Media and background jobs run continuously in the Processing Center even when you leave the app.</string>
+    <string name="settings_licenses_desc">Your files stay on your phone. TOOLSNEST has no account and never uploads your files.</string>
+
+    <!-- Video Settings -->
+    <string name="settings_video_title">Video Tools</string>
+    <string name="settings_video_default_quality">Default Video Quality</string>
+    <string name="settings_video_default_quality_desc">Target bitrate preset for video compression</string>
+
+    <!-- Errors & Feedback -->
+    <string name="error_generic">An unexpected error occurred. Please try again.</string>
+    <string name="error_no_app_to_open">No application found to open this file.</string>
+    <string name="error_could_not_share">Could not share this file.</string>
+    <string name="file_saved_success">File saved successfully.</string>
+
+    <!-- Common Action Buttons -->
+    <string name="common_select_file">Select file</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_save">Save</string>
+    <string name="common_share">Share</string>
+    <string name="common_open">Open</string>
+    <string name="common_back">Back</string>
+    <string name="common_undo">Undo</string>
+    <string name="common_redo">Redo</string>
+    <string name="common_done">Done</string>
+    <string name="common_discard">Discard</string>
+    <string name="common_save_gallery">Save to Gallery</string>
+    <string name="common_gallery_api_notice">Saving to Gallery directly requires Android 10+. Please use Save.</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_process_again">Process another</string>
+    <string name="common_file_counter">File %1$d of %2$d - %3$s</string>
+    <string name="common_remove_file">Remove file</string>
+    <string name="common_processing">Processing...</string>
+    <string name="common_saved_to_gallery">Saved to Pictures/TOOLSNEST</string>
+    <string name="crash_dialog_title">TOOLSNEST closed unexpectedly last time</string>
+    <string name="crash_dialog_desc">A crash report was generated locally to help diagnose the issue. No personal data or file names are included.</string>
+    <string name="crash_dialog_copy">Copy Report</string>
+    <string name="crash_dialog_delete">Delete Report</string>
+    <string name="crash_dialog_close">Close</string>
+    <string name="crash_report_copied">Crash report copied to clipboard</string>
+    <string name="common_job_restored_lost">Previous task ended because the app process was closed.</string>
+
+    <!-- Step 7: Localized Strings for Image Tools, PDF Rotator, and MediaTransformerEngine (B-13) -->
+    <string name="common_max_images_reached">Maximum limit of 20 images reached. Extra images were skipped.</string>
+    <string name="common_images_recovery_hint">Ensure selected images are standard formats (JPEG, PNG, WebP) under 50 MB and 48 megapixels.</string>
+    <string name="tool1_supported_formats">Select up to 20 images (JPEG, PNG, WebP). Max 50 MB / 48 MP each.</string>
+    <string name="tool2_supported_formats">Select up to 20 images to resize. Enforces 48 MP maximum.</string>
+    <string name="tool3_supported_formats">Select up to 20 images to convert between PNG, JPEG, and WebP.</string>
+    <string name="tool5_supported_formats">Select up to 20 images to inspect and remove metadata tags.</string>
+    <string name="tool15_picker_subtitle">PDF documents up to 150 MB</string>
+    <string name="media_stage_processing_aac_pct">Processing AAC (%1$d%%)…</string>
+    <string name="media_stage_processing_aac">Processing AAC…</string>
+    <string name="media_stage_processing_complete">Processing complete</string>
+    <string name="media_stage_compressing_video_pct">Compressing video (%1$d%%)…</string>
+    <string name="media_stage_compressing_video">Compressing video…</string>
+    <string name="media_stage_compressing_complete">Compression complete</string>
+
+    <!-- Tool 21: PDF Editor -->
+    <string name="tool21_name">PDF Editor</string>
+    <string name="tool21_desc">Add text, draw, sign, redact, and edit pages offline</string>
+
+    <!-- Tool 22: AI Image Inspector -->
+    <string name="tool22_name">AI Image Inspector</string>
+    <string name="tool22_desc">Detect AI generation markers, C2PA, EXIF traces, and ELA forensics</string>
+
+    <!-- Settings & Common shared strings -->
+    <string name="settings_app_version">Version %1$s</string>
+    <string name="common_audio_player_error">Failed to load audio</string>
+    <string name="common_pages_count_one">1 page</string>
+    <string name="common_pages_count_other">%1$d pages</string>
+    <string name="common_tap_to_open">Tap to open</string>
+    <string name="common_tap_to_view">Tap to view</string>
+    <string name="common_failed_load_image">Failed to load image</string>
+    <string name="settings_image_title">Image Tools Defaults</string>
+    <string name="settings_image_default_format">Default Output Format</string>
+    <string name="settings_image_default_quality">Default JPEG / WebP Quality</string>
+    <string name="settings_pdf_title">PDF &amp; QR Defaults</string>
+    <string name="settings_pdf_page_size">Default PDF Page Size</string>
+    <string name="settings_qr_resolution">Default QR Code Resolution</string>
+    <string name="settings_media_cache">Media Job Cache: %1$s</string>
+    <string name="settings_media_unsaved">%1$d unsaved completed job output(s)</string>
+</resources>

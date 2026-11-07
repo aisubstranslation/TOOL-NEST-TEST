@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool2_mode_percent">प्रतिशत मोड</string>
+    <string name="tool2_mode_dimensions">सटीक आयाम</string>
+    <string name="tool2_percent_slider">स्केल प्रतिशत: %1$d%%</string>
+    <string name="tool2_width">चौड़ाई (px)</string>
+    <string name="tool2_height">ऊंचाई (px)</string>
+    <string name="tool2_lock_aspect">पहलू अनुपात लॉक करें</string>
+    <string name="tool2_stretch_switch">स्ट्रेच (आकार विकृति की अनुमति दें)</string>
+    <string name="tool2_preset_25">25%</string>
+    <string name="tool2_preset_50">50%</string>
+    <string name="tool2_preset_75">75%</string>
+    <string name="tool2_preset_1080">1080p लंबा किनारा</string>
+    <string name="tool2_preset_720">720p लंबा किनारा</string>
+    <string name="tool2_target_preview">अपेक्षित परिणाम: %1$d × %2$d px (%3$.1f MP)</string>
+    <string name="tool2_error_dimensions">आयाम धनात्मक और 48 मेगापिक्सल से कम होने चाहिए।</string>
+    <string name="tool2_start_button">छवियों का आकार बदलें</string>
+</resources>

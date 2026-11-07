@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool17_picker_title">Select Audio File</string>
+    <string name="tool17_picker_formats">Supports MP3, WAV, AAC, M4A, FLAC, OGG, OPUS</string>
+    <string name="tool17_output_format">Output Format</string>
+    <string name="tool17_format_note">M4A (AAC) creates smaller compressed files. WAV creates uncompressed 16-bit PCM for lossless editing.</string>
+    <string name="tool17_aac_bitrate">Bitrate (AAC)</string>
+    <string name="tool17_quality_honesty_note">Converting from a lossy format (e.g. MP3 to WAV) will not improve original audio quality, but creates a lossless representation.</string>
+    <string name="tool17_action_convert">Convert Audio</string>
+    <string name="tool17_err_no_audio">Selected file contains no decodable audio</string>
+    <string name="tool17_success_title">Audio Converted Successfully</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool3_select_format">Target Format</string>
+    <string name="tool3_quality">Quality: %1$d%%</string>
+    <string name="tool3_bg_color">Background Color for Transparency</string>
+    <string name="tool3_bg_color_note">JPEG does not support transparency. Transparent areas will be filled with this background color.</string>
+    <string name="tool3_color_custom">Hex Color</string>
+    <string name="tool3_start_button">Convert Images</string>
+</resources>

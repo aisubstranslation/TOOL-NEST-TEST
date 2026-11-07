@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool6_select_file">کوئی بھی فائل منتخب کریں</string>
+    <string name="tool6_file_picker_hint">تفصیلی خصوصیات دیکھنے کے لیے ڈیوائس اسٹوریج سے کوئی بھی فائل چنیں۔</string>
+    <string name="tool6_details_title">فائل کی خصوصیات</string>
+    <string name="tool6_property_name">فائل کا نام</string>
+    <string name="tool6_property_extension">ایکسٹینشن</string>
+    <string name="tool6_property_mime">MIME قسم</string>
+    <string name="tool6_property_size">فائل سائز</string>
+    <string name="tool6_property_modified">آخری تبدیلی</string>
+    <string name="tool6_property_dimensions">پیمائش</string>
+    <string name="tool6_property_format">فارمیٹ</string>
+    <string name="tool6_property_orientation">EXIF رخ</string>
+    <string name="tool6_property_duration">دورانیہ</string>
+    <string name="tool6_property_video_res">ویڈیو ریزولوشن</string>
+    <string name="tool6_property_bitrate">بٹ ریٹ</string>
+    <string name="tool6_property_framerate">فریم ریٹ</string>
+    <string name="tool6_property_tracks">میڈیا ٹریکس</string>
+    <string name="tool6_property_pages">PDF کل صفحات</string>
+    <string name="tool6_property_zip_entries">آرکائیو اندراجات</string>
+    <string name="tool6_not_available">دستیاب نہیں</string>
+    <string name="tool6_pdf_unreadable">پاس ورڈ محفوظ یا ناقابل مطالعہ</string>
+    <string name="tool6_copy_info">معلومات کاپی کریں</string>
+    <string name="tool6_share_info">معلومات شیئر کریں</string>
+    <string name="tool6_select_another">دوسری فائل منتخب کریں</string>
+    <string name="tool6_info_copied">فائل کی تفصیلات کلپ بورڈ پر کاپی ہو گئیں</string>
+</resources>

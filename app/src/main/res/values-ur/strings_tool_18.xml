@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool18_no_video">منتخب فائل میں کوئی ویڈیو ٹریک نہیں ہے</string>
+    <string name="tool18_picker_title">ویڈیو منتخب کریں</string>
+    <string name="tool18_picker_desc">کمپریس کرنے کے لیے ویڈیو منتخب کریں (MP4, MKV, WebM, MOV, زیادہ سے زیادہ 1000 MB)</string>
+    <string name="tool18_resolution_title">ریزولوشن</string>
+    <string name="tool18_target_resolution">ہدف: %1$d × %2$d (تناسب برقرار ہے)</string>
+    <string name="tool18_quality_title">کمپریشن کوالٹی</string>
+    <string name="tool18_audio_title">آڈیو ٹریک</string>
+    <string name="tool18_audio_keep">اصل برقرار رکھیں</string>
+    <string name="tool18_audio_remove">آڈیو ہٹائیں</string>
+    <string name="tool18_estimate_label">متوقع آؤٹ پٹ سائز</string>
+    <string name="tool18_little_reduction_warning">ان ترتیبات کے ساتھ سائز میں بہت کم یا کوئی کمی متوقع نہیں ہے۔</string>
+    <string name="tool18_codec_note">ویڈیو زیادہ سے زیادہ آلات کی مطابقت کے لیے H.264 (MP4) میں کمپریس کی جاتی ہے۔</string>
+    <string name="tool18_ram_note">2 GB ریم والے فونز پر بڑی ویڈیوز میں وقت لگ سکتا ہے۔ آپ ایپ چھوڑ سکتے ہیں، پیش رفت نوٹیفکیشن میں نظر آئے گی۔</string>
+    <string name="tool18_hdr_note">نوٹ: HDR ویڈیوز مختلف نظر آ سکتی ہیں۔</string>
+    <string name="tool18_action_compress">ویڈیو کمپریس کریں</string>
+    <string name="tool18_success_title">ویڈیو کامیابی سے کمپریس ہو گئی</string>
+    <string name="tool18_size_reduced">%1$d%% کی بچت • ریزولوشن: %2$s</string>
+    <string name="tool18_size_larger_warning">نوٹ: آؤٹ پٹ فائل اصل سے بڑی ہے۔</string>
+    <string name="tool18_save_gallery">گیلری میں محفوظ کریں</string>
+    <string name="tool18_saved_to_gallery">Movies/TOOLSNEST میں محفوظ کر لیا گیا</string>
+    <string name="tool18_play_preview">پری ویو چلائیں</string>
+    <string name="tool18_quality_high">اعلیٰ</string>
+    <string name="tool18_quality_balanced">متوازن</string>
+    <string name="tool18_quality_small">چھوٹی</string>
+    <string name="tool18_res_original">اصل</string>
+</resources>

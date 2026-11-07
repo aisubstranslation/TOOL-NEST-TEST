@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool15_select_pdf">Select PDF</string>
+    <string name="tool15_pages_count">%1$d pages</string>
+    <string name="tool15_select_all">All</string>
+    <string name="tool15_select_odd">Odd</string>
+    <string name="tool15_select_even">Even</string>
+    <string name="tool15_select_custom">Custom</string>
+    <string name="tool15_custom_range_placeholder">e.g. 1-3, 5, 8</string>
+    <string name="tool15_apply_range">Apply</string>
+    <string name="tool15_selected_count">%1$d pages selected</string>
+    <string name="tool15_rotate_cw">90° CW</string>
+    <string name="tool15_rotate_180">180°</string>
+    <string name="tool15_rotate_ccw">90° CCW</string>
+    <string name="tool15_reset">Reset</string>
+    <string name="tool15_page_label">Page %1$d</string>
+    <string name="tool15_btn_rotate">Apply Rotations</string>
+    <string name="tool15_processing">Rotating PDF pages…</string>
+    <string name="tool15_success_title">PDF Rotated Successfully</string>
+    <string name="tool15_btn_save">Save PDF</string>
+    <string name="tool15_btn_share">Share</string>
+    <string name="tool15_btn_open">Open</string>
+</resources>

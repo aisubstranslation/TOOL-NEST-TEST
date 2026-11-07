@@ -1,0 +1,247 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-test:
+    name: Build, Test & Permission Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      # Gradle version 9.3.1 read directly from gradle/wrapper/gradle-wrapper.properties
+      # distributionUrl=https\://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+      - name: Set up Gradle 9.3.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+
+      - name: Determine Gradle executable
+        run: |
+          if [ -f "./gradlew" ] && [ -f "gradle/wrapper/gradle-wrapper.jar" ]; then
+            chmod +x ./gradlew
+            echo "GRADLE_CMD=./gradlew" >> $GITHUB_ENV
+          else
+            echo "GRADLE_CMD=gradle" >> $GITHUB_ENV
+          fi
+
+      - name: Ensure built-in model (u2netp.onnx)
+        env:
+          U2NETP_EXTRA_URL: ${{ vars.U2NETP_URL }}
+        run: |
+          MODEL_DIR="app/src/main/assets/models"
+          MODEL="$MODEL_DIR/u2netp.onnx"
+          EXPECTED="309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+          mkdir -p "$MODEL_DIR"
+          if [ -s "$MODEL" ]; then
+            echo "Model found in the repository."
+          else
+            echo "Model is not in the repository - downloading it for this build."
+            for URL in "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx" "$U2NETP_EXTRA_URL"; do
+              [ -z "$URL" ] && continue
+              echo "Trying: $URL"
+              if curl -fL --retry 3 --retry-delay 3 --connect-timeout 20 -o "$MODEL.tmp" "$URL"; then
+                ACTUAL=$(sha256sum "$MODEL.tmp" | cut -d' ' -f1)
+                if [ "$ACTUAL" = "$EXPECTED" ]; then
+                  mv "$MODEL.tmp" "$MODEL"
+                  echo "Model downloaded and verified (SHA-256 matches)."
+                  break
+                fi
+                echo "::warning::Checksum mismatch from $URL (got $ACTUAL)"
+              fi
+              rm -f "$MODEL.tmp"
+            done
+          fi
+          if [ ! -s "$MODEL" ]; then
+            echo "::error::u2netp.onnx is missing and could not be downloaded. Upload it to app/src/main/assets/models/u2netp.onnx, or create a repository variable U2NETP_URL containing a direct download link."
+            exit 1
+          fi
+          ACTUAL=$(sha256sum "$MODEL" | cut -d' ' -f1)
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::warning::u2netp.onnx differs from the standard model (SHA-256 $ACTUAL). Continuing anyway."
+          fi
+          ls -l "$MODEL"
+
+      - name: Network code policy gate
+        run: |
+          # Only app/src/main/java/com/example/bgremove/models/ may touch the network.
+          VIOLATIONS=$(grep -rEl "HttpURLConnection|HttpsURLConnection|okhttp3|retrofit2|java\.net\.URL\b|java\.net\.Socket|java\.net\.http" app/src/main/java | grep -v "com/example/bgremove/models/" || true)
+          if [ -n "$VIOLATIONS" ]; then
+            echo "::error::VIOLATION: network code found outside bgremove/models:"
+            echo "$VIOLATIONS"
+            exit 1
+          fi
+          echo "Network code policy gate passed."
+
+      - name: Unit tests
+        id: unit_tests
+        run: |
+          $GRADLE_CMD testDebugUnitTest --stacktrace
+
+      - name: Lint
+        id: lint
+        continue-on-error: true
+        run: |
+          $GRADLE_CMD lintDebug
+
+      - name: Assemble debug APK
+        id: assemble
+        if: always()
+        continue-on-error: true
+        run: |
+          $GRADLE_CMD assembleDebug
+
+      - name: Check APK permissions
+        id: perms
+        if: steps.assemble.outcome == 'success'
+        run: |
+          AAPT2=$(ls -d "$ANDROID_HOME"/build-tools/*/aapt2 2>/dev/null | sort -V | tail -1)
+          if [ -z "$AAPT2" ] && [ -n "$ANDROID_SDK_ROOT" ]; then
+            AAPT2=$(ls -d "$ANDROID_SDK_ROOT"/build-tools/*/aapt2 2>/dev/null | sort -V | tail -1)
+          fi
+          if [ -z "$AAPT2" ] || [ ! -x "$AAPT2" ]; then
+            echo "::error::aapt2 executable could not be found under \$ANDROID_HOME/build-tools"
+            exit 1
+          fi
+          echo "Found aapt2 at: $AAPT2"
+          
+          APK_FILE=$(ls app/build/outputs/apk/debug/*.apk 2>/dev/null | head -n 1)
+          if [ -z "$APK_FILE" ]; then
+            echo "::error::No debug APK found in app/build/outputs/apk/debug/"
+            exit 1
+          fi
+          
+          echo "Dumping permissions for: $APK_FILE"
+          PERMS_OUTPUT=$("$AAPT2" dump permissions "$APK_FILE")
+          echo "$PERMS_OUTPUT"
+          
+          # Policy: INTERNET is allowed ONLY for the optional model downloader.
+          # Network code is confined to bgremove/models (checked by the "Network code policy gate" step).
+          for BAD in READ_EXTERNAL_STORAGE WRITE_EXTERNAL_STORAGE MANAGE_EXTERNAL_STORAGE ACCESS_FINE_LOCATION ACCESS_COARSE_LOCATION READ_CONTACTS READ_SMS RECORD_AUDIO CAMERA; do
+            if echo "$PERMS_OUTPUT" | grep -q "android.permission.$BAD"; then
+              echo "::error::VIOLATION: android.permission.$BAD was detected in built APK!"
+              exit 1
+            fi
+          done
+          if echo "$PERMS_OUTPUT" | grep -q "android.permission.INTERNET"; then
+            echo "INTERNET present (allowed: optional model downloader only)."
+          fi
+          echo "Permission verification passed."
+
+      - name: Verify APK integrity
+        if: steps.assemble.outcome == 'success'
+        continue-on-error: true
+        run: |
+          APK=$(ls app/build/outputs/apk/debug/*.apk | head -n 1)
+          SIZE=$(stat -c%s "$APK")
+          SHA=$(sha256sum "$APK" | cut -d' ' -f1)
+          echo "APK: $APK"
+          echo "Size: $SIZE bytes"
+          echo "SHA-256: $SHA"
+          unzip -tq "$APK"
+          APKSIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -1)
+          if [ -n "$APKSIGNER" ]; then
+            "$APKSIGNER" verify --verbose --print-certs "$APK" | head -n 12
+          else
+            echo "apksigner not found, skipping the signature check"
+          fi
+          echo "Files under assets/models inside the APK:"
+          unzip -l "$APK" | grep "assets/models/" || echo "::warning::No model found inside the APK"
+          {
+            echo "### APK check"
+            echo "- Size: $SIZE bytes"
+            echo "- SHA-256: \`$SHA\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload debug APK
+        id: upload_apk
+        if: steps.assemble.outcome == 'success'
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: TOOLSNEST-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          retention-days: 1
+
+      - name: Upload reports
+        id: upload_reports
+        if: failure()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-and-lint-reports
+          path: |
+            app/build/reports/tests/
+            app/build/reports/lint-results-debug.html
+            app/build/reports/lint-results-debug.xml
+          retention-days: 1
+          if-no-files-found: ignore
+
+      - name: Artifact upload note
+        if: always()
+        run: |
+          if [ "${{ steps.upload_apk.outcome }}" = "failure" ]; then
+            MSG="APK artifact upload failed (GitHub storage quota). Build, tests, lint and permission check are still valid. Delete old artifacts or wait 6-12 hours, then re-run."
+            echo "::warning::$MSG"
+            echo "$MSG" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Publish debug APK to release
+        if: steps.assemble.outcome == 'success' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APK=$(ls app/build/outputs/apk/debug/*.apk | head -n 1)
+          SIZE=$(stat -c%s "$APK")
+          SHA=$(sha256sum "$APK" | cut -d' ' -f1)
+          gh release delete debug-latest --cleanup-tag --yes || true
+          gh release create debug-latest "$APK" --prerelease --title "TOOLSNEST debug build" --notes "Commit ${{ github.sha }}. Debug APK, for testing only. Size: $SIZE bytes. SHA-256: $SHA"
+
+      - name: Final status
+        if: always()
+        run: |
+          FAILED=0
+          if [ "${{ steps.unit_tests.outcome }}" != "success" ]; then
+            echo "::error::Step 'Unit tests' failed (${{ steps.unit_tests.outcome }})"
+            FAILED=1
+          fi
+          if [ "${{ steps.lint.outcome }}" != "success" ]; then
+            echo "::error::Step 'Lint' failed (${{ steps.lint.outcome }})"
+            FAILED=1
+          fi
+          if [ "${{ steps.assemble.outcome }}" != "success" ]; then
+            echo "::error::Step 'Assemble debug APK' failed (${{ steps.assemble.outcome }})"
+            FAILED=1
+          fi
+          if [ "${{ steps.perms.outcome }}" != "success" ]; then
+            echo "::error::Step 'Check APK permissions' failed (${{ steps.perms.outcome }})"
+            FAILED=1
+          fi
+          if [ "$FAILED" -ne 0 ]; then
+            echo "::error::One or more CI validation gates failed."
+            exit 1
+          fi
+          echo "All CI gates succeeded successfully."

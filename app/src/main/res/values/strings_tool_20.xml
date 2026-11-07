@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool20_picker_title">Select an image to remove background</string>
+    <string name="tool20_picker_desc">PNG, JPEG or WebP up to 50 MB / 16 Megapixels</string>
+    <string name="tool20_detecting">Detecting subject with offline model…</string>
+    <string name="tool20_stage_loading">Loading model…</string>
+    <string name="tool20_model_missing_hint">Please place u2netp.onnx in assets/models/ directory.</string>
+
+    <string name="tool20_tab_cutout">Cutout</string>
+    <string name="tool20_tab_original">Original</string>
+    <string name="tool20_tab_compare">Compare</string>
+    <string name="tool20_tab_checkerboard">Checker</string>
+
+    <string name="tool20_manual_edit_title">Manual Refinement</string>
+    <string name="tool20_mode_preview">View</string>
+    <string name="tool20_mode_brush">Brush</string>
+    <string name="tool20_brush_erase">Erase</string>
+    <string name="tool20_brush_restore">Restore</string>
+    <string name="tool20_brush_size">Brush size</string>
+    <string name="tool20_edge_softness">Edge softness (blur)</string>
+    <string name="tool20_reset_tooltip">Reset to model detection</string>
+
+    <string name="tool20_bg_title">Background Replacement</string>
+    <string name="tool20_bg_transparent">Transparent</string>
+    <string name="tool20_bg_white">White</string>
+    <string name="tool20_bg_black">Black</string>
+    <string name="tool20_bg_image">Photo</string>
+    <string name="tool20_bg_image_load_failed">Could not load the background image.</string>
+
+    <string name="tool20_export_format">Output Format</string>
+    <string name="tool20_honest_note">Works best when there is one clear main subject. The small offline model can leave rough edges around hair, fur and thin objects; use the brushes to fix them. Leaving this screen cancels detection, while export continues as a background job. Nothing leaves your phone.</string>
+    <string name="tool20_action_export">Export Cutout</string>
+
+
+    <string name="tool20_unsaved_title">Discard edits?</string>
+    <string name="tool20_unsaved_desc">You have unsaved brush or background changes. If you go back now, these edits will be lost.</string>
+    <string name="tool20_detection_uncertain">The model was uncertain about the subject. Use the Restore or Erase brushes to refine the cutout.</string>
+    <string name="tool20_zoom_hint">The brush paints instantly. Pinch with two fingers to zoom and move the picture, then paint with one finger for fine detail.</string>
+</resources>

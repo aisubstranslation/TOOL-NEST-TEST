@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool13_picker_title">پی ڈی ایف دستاویز منتخب کریں</string>
+    <string name="tool13_picker_desc">صفحات کو تصاویر میں تبدیل کرنے کے لیے پی ڈی ایف فائل منتخب کریں</string>
+    <string name="tool13_page_range">تبدیل کرنے کے صفحات</string>
+    <string name="tool13_range_all">تمام صفحات (%1$d)</string>
+    <string name="tool13_range_custom">مخصوص صفحات کی حدود</string>
+    <string name="tool13_range_placeholder">مثلاً 1-3، 5، 7-9</string>
+    <string name="tool13_format">تصویر کا فارمیٹ</string>
+    <string name="tool13_format_png">PNG (بغیر کوالٹی کمی)</string>
+    <string name="tool13_format_jpeg">JPEG</string>
+    <string name="tool13_quality">جے پی ای جی معیار (%1$d%%)</string>
+    <string name="tool13_resolution">ریزولوشن (DPI)</string>
+    <string name="tool13_error_exceeds_16mp">صفحہ %1$d پر %2$d DPI کی ریزولوشن 16 میگا پکسل (%3$d × %4$d px) سے زیادہ بنتی ہے۔ برائے مہربانی کم DPI منتخب کریں۔</string>
+    <string name="tool13_btn_convert">تصاویر میں تبدیل کریں</string>
+    <string name="tool13_success_title">تصاویر تیار ہو گئیں (%1$d)</string>
+    <string name="tool13_action_zip">ZIP فائل محفوظ کریں</string>
+    <string name="tool13_action_folder">فولڈر میں محفوظ کریں</string>
+    <string name="tool13_action_gallery">گیلری میں محفوظ کریں</string>
+    <string name="tool13_action_share">تمام شیئر کریں</string>
+    <string name="tool13_saved_to_gallery">%1$d تصاویر Pictures/TOOLSNEST میں محفوظ ہو گئیں</string>
+</resources>

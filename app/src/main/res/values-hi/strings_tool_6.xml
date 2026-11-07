@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool6_select_file">कोई भी फ़ाइल चुनें</string>
+    <string name="tool6_file_picker_hint">विस्तृत गुण देखने के लिए डिवाइस स्टोरेज से कोई भी फ़ाइल चुनें।</string>
+    <string name="tool6_details_title">फ़ाइल गुण</string>
+    <string name="tool6_property_name">फ़ाइल का नाम</string>
+    <string name="tool6_property_extension">एक्सटेंशन</string>
+    <string name="tool6_property_mime">MIME प्रकार</string>
+    <string name="tool6_property_size">फ़ाइल आकार</string>
+    <string name="tool6_property_modified">अंतिम संशोधन</string>
+    <string name="tool6_property_dimensions">आयाम</string>
+    <string name="tool6_property_format">प्रारूप</string>
+    <string name="tool6_property_orientation">EXIF दिशा</string>
+    <string name="tool6_property_duration">अवधि</string>
+    <string name="tool6_property_video_res">वीडियो रिज़ॉल्यूशन</string>
+    <string name="tool6_property_bitrate">बिटरेट</string>
+    <string name="tool6_property_framerate">फ़्रेम दर</string>
+    <string name="tool6_property_tracks">मीडिया ट्रैक्स</string>
+    <string name="tool6_property_pages">PDF पृष्ठ संख्या</string>
+    <string name="tool6_property_zip_entries">अभिलेखागार प्रविष्टियाँ</string>
+    <string name="tool6_not_available">उपलब्ध नहीं</string>
+    <string name="tool6_pdf_unreadable">पासवर्ड-संरक्षित या अपठनीय</string>
+    <string name="tool6_copy_info">जानकारी कॉपी करें</string>
+    <string name="tool6_share_info">जानकारी साझा करें</string>
+    <string name="tool6_select_another">दूसरी फ़ाइल चुनें</string>
+    <string name="tool6_info_copied">फ़ाइल विवरण क्लिपबोर्ड पर कॉपी हो गया</string>
+</resources>

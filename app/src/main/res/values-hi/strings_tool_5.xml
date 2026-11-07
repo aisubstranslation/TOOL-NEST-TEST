@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool5_before_title">मूल फ़ाइल में पाया गया मेटाडेटा</string>
+    <string name="tool5_after_title">सफ़ाई के बाद सत्यापन</string>
+    <string name="tool5_gps_present">GPS स्थान निर्देशांक मौजूद हैं</string>
+    <string name="tool5_camera_info">कैमरा हार्डवेयर और मॉडल टैग</string>
+    <string name="tool5_ai_markers">संभावित AI-जनरेशन / क्रेडेंशियल मार्कर मिले</string>
+    <string name="tool5_clean_notice">कोई मेटाडेटा नहीं मिला</string>
+    <string name="tool5_removed_status">सफलतापूर्वक हटाया गया</string>
+    <string name="tool5_honest_notice">स्पष्ट सूचना: यह टूल पिक्सल को पुन: एनकोड करके मेटाडेटा (EXIF, GPS, XMP, C2PA) हटाता है। यह पिक्सल के अंदर छुपे वॉटरमार्क को नहीं हटा सकता।</string>
+    <string name="tool5_start_button">मेटाडेटा हटाएं और सहेजें</string>
+</resources>

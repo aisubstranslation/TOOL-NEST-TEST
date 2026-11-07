@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool22_picker_title">معائنہ کے لیے تصاویر منتخب کریں</string>
+    <string name="tool22_picker_desc">اے آئی، C2PA اور ای ایل اے کے شواہد تلاش کرنے کے لیے زیادہ سے زیادہ 10 تصاویر منتخب کریں</string>
+    <string name="tool22_btn_analyze">تصاویر کا معائنہ کریں</string>
+    <string name="tool22_save_report">رپورٹ محفوظ کریں</string>
+</resources>

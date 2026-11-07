@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool4_select_image">تراشنے کے لیے تصویر منتخب کریں</string>
+    <string name="tool4_picker_hint">کراپ کرنے کے لیے تصویر منتخب کریں (JPEG، PNG، WebP زیادہ سے زیادہ 50 MB / 48 MP)۔</string>
+    <string name="tool4_aspect_ratio">تناسب</string>
+    <string name="tool4_aspect_free">آزاد</string>
+    <string name="tool4_aspect_1_1">1:1</string>
+    <string name="tool4_aspect_4_3">4:3</string>
+    <string name="tool4_aspect_3_4">3:4</string>
+    <string name="tool4_aspect_16_9">16:9</string>
+    <string name="tool4_aspect_9_16">9:16</string>
+    <string name="tool4_undo">واپس</string>
+    <string name="tool4_redo">دوبارہ</string>
+    <string name="tool4_reset">ری سیٹ</string>
+    <string name="tool4_save_button">کراپ کریں اور محفوظ کریں</string>
+    <string name="tool4_output_format">آؤٹ پٹ فارمیٹ</string>
+    <string name="tool4_quality">معیار</string>
+    <string name="tool4_discard_dialog_title">تبدیلیاں ختم کریں؟</string>
+    <string name="tool4_discard_dialog_message">آپ کے پاس غیر محفوظ شدہ ترامیم ہیں۔ کیا آپ انہیں ضائع کرنا چاہتے ہیں؟</string>
+    <string name="tool4_discard_confirm">رد کریں</string>
+    <string name="tool4_discard_cancel">جاری رکھیں</string>
+    <string name="tool4_crop_dimensions">تراش: %1$d × %2$d px</string>
+</resources>

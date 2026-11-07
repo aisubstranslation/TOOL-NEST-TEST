@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool14_picker_title">تصاویر منتخب کریں</string>
+    <string name="tool14_picker_desc">پی ڈی ایف بنانے کے لیے زیادہ سے زیادہ 50 تصاویر منتخب کریں</string>
+    <string name="tool14_page_size">صفحے کا سائز</string>
+    <string name="tool14_page_size_a4">A4 (595 × 842 pt)</string>
+    <string name="tool14_page_size_letter">Letter (612 × 792 pt)</string>
+    <string name="tool14_page_size_fit">تصویر کے مطابق سائز</string>
+    <string name="tool14_orientation">سمت بندی</string>
+    <string name="tool14_orientation_auto">خودکار (ہر تصویر کے مطابق)</string>
+    <string name="tool14_orientation_portrait">عمودی (پورٹریٹ)</string>
+    <string name="tool14_orientation_landscape">افقی (لینڈ اسکیپ)</string>
+    <string name="tool14_margin">حاشیہ (مارجن)</string>
+    <string name="tool14_margin_none">کوئی نہیں</string>
+    <string name="tool14_margin_10mm">10 ملی میٹر</string>
+    <string name="tool14_margin_20mm">20 ملی میٹر</string>
+    <string name="tool14_quality">معیار (کوالٹی)</string>
+    <string name="tool14_quality_high">اعلیٰ (~300 DPI، 90%)</string>
+    <string name="tool14_quality_medium">درمیانہ (~150 DPI، 75%)</string>
+    <string name="tool14_quality_desc">اعلیٰ معیار پرنٹ کے لیے 300 DPI تک محفوظ رکھتا ہے۔ درمیانہ معیار چھوٹا سائز بناتا ہے۔</string>
+    <string name="tool14_png_notice">نوٹ: شفاف حصوں کا پس منظر سفید کر دیا جائے گا۔</string>
+    <string name="tool14_btn_convert">پی ڈی ایف بنائیں</string>
+    <string name="tool14_add_more">مزید تصاویر شامل کریں</string>
+    <string name="tool14_move_up">اوپر کریں</string>
+    <string name="tool14_move_down">نیچے کریں</string>
+    <string name="tool14_rotate">90° گھمائیں</string>
+    <string name="tool14_remove">ہٹائیں</string>
+    <string name="tool14_error_max_images">آپ زیادہ سے زیادہ 50 تصاویر منتخب کر سکتے ہیں۔</string>
+    <string name="tool14_success_title">پی ڈی ایف کامیابی سے بن گئی</string>
+    <string name="tool14_page_count">%1$d صفحات</string>
+    <string name="tool14_page_count_one">1 صفحہ</string>
+</resources>

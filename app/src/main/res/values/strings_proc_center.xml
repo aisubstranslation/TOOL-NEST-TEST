@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Processing Center -->
+    <string name="proc_center_title">Processing Center</string>
+    <string name="proc_center_card_title">Processing Center</string>
+    <string name="proc_center_card_active">%1$d active background tasks</string>
+    <string name="proc_center_card_none">No background tasks running</string>
+    <string name="proc_center_empty_title">No background jobs</string>
+    <string name="proc_center_empty_desc">Tasks and media conversions processed in the background will appear here.</string>
+    <string name="proc_section_active">Active</string>
+    <string name="proc_section_queued">Queued</string>
+    <string name="proc_section_attention">Needs Attention</string>
+    <string name="proc_section_completed">Completed</string>
+    <string name="proc_section_cancelled">Cancelled</string>
+    <string name="proc_action_details">Details</string>
+    <string name="proc_details_title">Task Details</string>
+    <string name="proc_output_unavailable">Output file is no longer available in cache.</string>
+    <string name="proc_remove_title">Remove Job</string>
+    <string name="proc_remove_confirm_message">Are you sure you want to remove this job from the list?</string>
+    <string name="proc_remove_warn_unsaved">Warning: The output file has not been saved yet and will be deleted from cache.</string>
+
+    <!-- Media Settings -->
+    <string name="settings_media_title">Media &amp; Audio Tools</string>
+    <string name="settings_media_default_format">Default Audio Format</string>
+    <string name="settings_media_default_bitrate">Default AAC Bitrate</string>
+    <string name="settings_media_bg_notifications">Background Notifications</string>
+    <string name="settings_media_bg_notifications_desc">Show progress notification while jobs run in background</string>
+    <string name="settings_media_delete_after_save">Delete Cache After Saving</string>
+    <string name="settings_media_delete_after_save_desc">Clean up temporary job files immediately after saving to device</string>
+
+    <!-- Common Strings for Tool Shell & Jobs -->
+    <string name="common_output_filename">Output file name</string>
+    <string name="common_change">Change</string>
+    <string name="common_close">Close</string>
+    <string name="common_remove">Remove</string>
+</resources>

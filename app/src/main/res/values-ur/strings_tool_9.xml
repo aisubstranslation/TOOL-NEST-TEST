@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool9_type_text">متن</string>
+    <string name="tool9_type_url">یو آر ایل</string>
+    <string name="tool9_type_wifi">وائی فائی</string>
+    <string name="tool9_type_contact">رابطہ</string>
+    <string name="tool9_type_email">ای میل</string>
+    <string name="tool9_type_phone">فون</string>
+    <string name="tool9_input_text_label">متن درج کریں</string>
+    <string name="tool9_input_url_label">ویب سائٹ کا پتہ</string>
+    <string name="tool9_url_prepended_hint">خودکار طور پر \'https://\' شامل کر دیا گیا</string>
+    <string name="tool9_wifi_ssid_label">نیٹ ورک کا نام (SSID)</string>
+    <string name="tool9_wifi_pass_label">پاس ورڈ</string>
+    <string name="tool9_wifi_sec_label">سیکیورٹی کی قسم</string>
+    <string name="tool9_wifi_hidden_label">پوشیدہ نیٹ ورک</string>
+    <string name="tool9_contact_name_label">پورا نام</string>
+    <string name="tool9_contact_phone_label">فون نمبر</string>
+    <string name="tool9_contact_email_label">ای میل</string>
+    <string name="tool9_contact_org_label">ادارہ</string>
+    <string name="tool9_contact_url_label">ویب سائٹ</string>
+    <string name="tool9_email_to_label">وصول کنندہ کا ای میل</string>
+    <string name="tool9_email_subj_label">موضوع</string>
+    <string name="tool9_email_body_label">پیغام کا متن</string>
+    <string name="tool9_phone_num_label">فون نمبر</string>
+    <string name="tool9_privacy_notice">رازداری کا نوٹس: تمام QR کوڈز 100% ڈیوائس پر ہی بنتے ہیں۔ وائی فائی پاس ورڈز یا رابطے کی تفصیلات کبھی ہسٹری میں محفوظ نہیں ہوتیں اور نہ کہیں بھیجی جاتی ہیں۔</string>
+    <string name="tool9_size_label">ریزولوشن</string>
+    <string name="tool9_ec_label">غلطی کی تصحیح (Error Correction)</string>
+    <string name="tool9_color_palette">رنگین تھیم</string>
+    <string name="tool9_verified_badge">تصدیق شدہ: کامیابی سے اسکین ہوتا ہے</string>
+    <string name="tool9_unverified_badge">تصدیق ناکام: اسکینرز اس کوڈ کو پڑھنے میں ناکام ہو سکتے ہیں</string>
+    <string name="tool9_warning_inverted">انتباہ: الٹے رنگوں والے QR کوڈز (سیاہ پس منظر پر ہلکا کوڈ) کچھ ایپس نہیں پڑھ سکتیں۔</string>
+    <string name="tool9_warning_contrast">انتباہ: کم رنگین کنٹراسٹ کی وجہ سے اسکیننگ میں دشواری ہو سکتی ہے۔</string>
+    <string name="tool9_btn_save_png">PNG محفوظ کریں</string>
+    <string name="tool9_btn_save_gallery">گیلری میں محفوظ کریں</string>
+    <string name="tool9_btn_share">شیئر کریں</string>
+    <string name="tool9_btn_copy_text">مواد کاپی کریں</string>
+    <string name="tool9_text_copied">مواد کلپ بورڈ پر کاپی ہو گیا</string>
+    <string name="tool9_saved_gallery">Pictures/TOOLSNEST میں محفوظ ہو گیا</string>
+    <string name="tool9_warning_unverified_banner">اس کوڈ کی تصدیق نہیں ہو سکی۔ استعمال کرنے سے پہلے اسے اپنے اسکینر سے جانچ لیں۔</string>
+    <string name="tool9_save_success">QR کوڈ کامیابی سے محفوظ ہو گیا</string>
+</resources>

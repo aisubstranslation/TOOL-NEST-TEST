@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool6_select_file">Select Any File</string>
+    <string name="tool6_file_picker_hint">Pick any file from device storage to inspect detailed properties.</string>
+    <string name="tool6_details_title">File Properties</string>
+    <string name="tool6_property_name">File Name</string>
+    <string name="tool6_property_extension">Extension</string>
+    <string name="tool6_property_mime">MIME Type</string>
+    <string name="tool6_property_size">File Size</string>
+    <string name="tool6_property_modified">Last Modified</string>
+    <string name="tool6_property_dimensions">Dimensions</string>
+    <string name="tool6_property_format">Format</string>
+    <string name="tool6_property_orientation">EXIF Orientation</string>
+    <string name="tool6_property_duration">Duration</string>
+    <string name="tool6_property_video_res">Video Resolution</string>
+    <string name="tool6_property_bitrate">Bitrate</string>
+    <string name="tool6_property_framerate">Frame Rate</string>
+    <string name="tool6_property_tracks">Media Tracks</string>
+    <string name="tool6_property_pages">PDF Page Count</string>
+    <string name="tool6_property_zip_entries">Archive Entries</string>
+    <string name="tool6_not_available">Not available</string>
+    <string name="tool6_pdf_unreadable">Password-protected or unreadable</string>
+    <string name="tool6_copy_info">Copy Info</string>
+    <string name="tool6_share_info">Share Info</string>
+    <string name="tool6_select_another">Select Another File</string>
+    <string name="tool6_info_copied">File details copied to clipboard</string>
+</resources>

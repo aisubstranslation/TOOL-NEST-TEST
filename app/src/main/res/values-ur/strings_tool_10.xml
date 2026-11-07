@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool10_picker_title">پی ڈی ایف فائلیں منتخب کریں</string>
+    <string name="tool10_picker_subtitle">2 یا زیادہ پی ڈی ایف فائلیں منتخب کریں (زیادہ سے زیادہ 20 فائلیں، کل 300 MB)</string>
+    <string name="tool10_add_more">مزید پی ڈی ایف شامل کریں</string>
+    <string name="tool10_move_up">اوپر کریں</string>
+    <string name="tool10_move_down">نیچے کریں</string>
+    <string name="tool10_file_count_header">%1$d فائلیں منتخب ہیں (%2$s)</string>
+    <string name="tool10_btn_merge">پی ڈی ایف فائلیں جوڑیں</string>
+    <string name="tool10_merging">پی ڈی ایف فائلیں جوڑی جا رہی ہیں…</string>
+    <string name="tool10_success_title">پی ڈی ایف فائلیں کامیابی سے جوڑ دی گئیں</string>
+    <string name="tool10_btn_save">پی ڈی ایف محفوظ کریں</string>
+    <string name="tool10_btn_share">شیئر کریں</string>
+    <string name="tool10_btn_open">کھولیں</string>
+    <string name="tool10_error_minimum_files">جوڑنے کے لیے کم از کم 2 پی ڈی ایف فائلیں منتخب کریں۔</string>
+    <string name="tool10_error_max_files">ایک وقت میں زیادہ سے زیادہ 20 فائلیں جوڑی جا سکتی ہیں۔</string>
+    <string name="tool10_error_max_size">تمام فائلوں کا مجموعی سائز 300 MB سے زیادہ ہے۔</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool16_picker_title">Select Video</string>
+    <string name="tool16_picker_desc">Select a video to extract its audio track</string>
+    <string name="tool16_no_audio">Selected video has no audio track</string>
+    <string name="tool16_audio_copy_note">Audio track can be extracted cleanly without re-encoding</string>
+    <string name="tool16_audio_reencode_note">Audio track will be re-encoded to AAC M4A</string>
+    <string name="tool16_wav_note">Audio track will be decoded to uncompressed 16-bit PCM WAV</string>
+    <string name="tool16_action_extract">Extract Audio</string>
+    <string name="tool16_success_title">Audio Extracted Successfully</string>
+</resources>

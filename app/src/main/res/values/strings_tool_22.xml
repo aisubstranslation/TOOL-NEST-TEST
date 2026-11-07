@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool22_picker_title">Select Images to Inspect</string>
+    <string name="tool22_picker_desc">Select up to 10 images to detect AI generation markers, C2PA, EXIF and ELA traces</string>
+    <string name="tool22_btn_analyze">Inspect Images</string>
+    <string name="tool22_save_report">Save Report</string>
+</resources>

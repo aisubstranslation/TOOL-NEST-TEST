@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool1_quality_label">Compression Quality: %1$d%%</string>
+    <string name="tool1_quality_hint">Applies to JPEG and lossy WebP. Lower values reduce file size.</string>
+    <string name="tool1_png_note">PNG is lossless, the quality slider is not used.</string>
+    <string name="tool1_resize_toggle">Optional resize</string>
+    <string name="tool1_resize_note">Scale down dimensions to reduce file size further</string>
+    <string name="tool1_output_format">Output Format</string>
+    <string name="tool1_custom_name">Output File Name (optional)</string>
+    <string name="tool1_start_button">Compress Images</string>
+</resources>

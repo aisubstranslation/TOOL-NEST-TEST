@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool20_picker_title">बैकग्राउंड हटाने के लिए छवि चुनें</string>
+    <string name="tool20_picker_desc">PNG, JPEG या WebP अधिकतम 50 MB / 16 मेगापिक्सल</string>
+    <string name="tool20_detecting">ऑफ़लाइन मॉडल से विषय की पहचान हो रही है…</string>
+    <string name="tool20_stage_loading">मॉडल लोड हो रहा है…</string>
+    <string name="tool20_model_missing_hint">कृपया u2netp.onnx को assets/models डायरेक्टरी में रखें।</string>
+
+    <string name="tool20_tab_cutout">कटआउट</string>
+    <string name="tool20_tab_original">मूल छवि</string>
+    <string name="tool20_tab_compare">तुलना</string>
+    <string name="tool20_tab_checkerboard">पारदर्शी चेकर</string>
+
+    <string name="tool20_manual_edit_title">मैनुअल सुधार और संपादन</string>
+    <string name="tool20_mode_preview">देखें</string>
+    <string name="tool20_mode_brush">ब्रश</string>
+    <string name="tool20_brush_erase">मिटाएं</string>
+    <string name="tool20_brush_restore">पुनर्स्थापित करें</string>
+    <string name="tool20_brush_size">ब्रश का आकार</string>
+    <string name="tool20_edge_softness">किनारों का धुंधलापन</string>
+    <string name="tool20_reset_tooltip">मॉडल की मूल पहचान पर रीसेट करें</string>
+
+    <string name="tool20_bg_title">बैकग्राउंड बदलें</string>
+    <string name="tool20_bg_transparent">पारदर्शी</string>
+    <string name="tool20_bg_white">सफ़ेद</string>
+    <string name="tool20_bg_black">काला</string>
+    <string name="tool20_bg_image">फ़ोटो</string>
+    <string name="tool20_bg_image_load_failed">पृष्ठभूमि छवि लोड नहीं की जा सकी।</string>
+
+    <string name="tool20_export_format">आउटपुट प्रारूप</string>
+    <string name="tool20_honest_note">जब एक स्पष्ट मुख्य विषय हो तो सबसे अच्छा काम करता है। छोटा ऑफ़लाइन मॉडल बालों और पतली वस्तुओं के किनारों पर कुछ खुरदरापन छोड़ सकता है; ब्रश से ठीक करें। इस स्क्रीन से बाहर जाने पर पहचान रद्द हो जाएगी, जबकि निर्यात बैकग्राउंड जॉब के रूप में जारी रहेगा। कोई डेटा आपके फ़ोन से बाहर नहीं जाता।</string>
+    <string name="tool20_action_export">कटआउट निर्यात करें</string>
+
+
+    <string name="tool20_unsaved_title">संपादन छोड़ें?</string>
+    <string name="tool20_unsaved_desc">आपके पास असहेजे गए ब्रश या बैकग्राउंड बदलाव हैं। वापस जाने पर ये मिट जाएंगे।</string>
+    <string name="tool20_detection_uncertain">मॉडल विषय की पहचान को लेकर अनिश्चित था; कटआउट को बेहतर बनाने के लिए ब्रश का उपयोग करें।</string>
+    <string name="tool20_zoom_hint">ब्रश तुरंत काम करता है। दो उंगलियों से ज़ूम करें और तस्वीर खिसकाएँ, फिर बारीक काम के लिए एक उंगली से ब्रश चलाएँ।</string>
+</resources>

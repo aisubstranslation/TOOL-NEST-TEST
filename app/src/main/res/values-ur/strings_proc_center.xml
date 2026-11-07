@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Processing Center -->
+    <string name="proc_center_title">پروسیسنگ سینٹر</string>
+    <string name="proc_center_card_title">پروسیسنگ سینٹر</string>
+    <string name="proc_center_card_active">%1$d فعال پس منظر کے کام</string>
+    <string name="proc_center_card_none">کوئی پس منظر کا کام فعال نہیں</string>
+    <string name="proc_center_empty_title">کوئی کام جاری نہیں ہے</string>
+    <string name="proc_center_empty_desc">پس منظر میں پروسیس ہونے والے کام اور میڈیا فائلیں یہاں نظر آئیں گی۔</string>
+    <string name="proc_section_active">فعال</string>
+    <string name="proc_section_queued">قطار میں</string>
+    <string name="proc_section_attention">توجہ درکار</string>
+    <string name="proc_section_completed">مکمل شدہ</string>
+    <string name="proc_section_cancelled">منسوخ شدہ</string>
+    <string name="proc_action_details">تفصیلات</string>
+    <string name="proc_details_title">کام کی تفصیلات</string>
+    <string name="proc_output_unavailable">آؤٹ پٹ فائل کیش میں دستیاب نہیں ہے۔</string>
+    <string name="proc_remove_title">کام ہٹائیں</string>
+    <string name="proc_remove_confirm_message">کیا آپ واقعی اس کام کو فہرست سے ہٹانا چاہتے ہیں؟</string>
+    <string name="proc_remove_warn_unsaved">انتباہ: فائل ابھی محفوظ نہیں ہوئی اور کیش سے حذف ہو جائے گی۔</string>
+
+    <!-- Media Settings -->
+    <string name="settings_media_title">میڈیا اور آڈیو ٹولز</string>
+    <string name="settings_media_default_format">پہلے سے طے شدہ آڈیو فارمیٹ</string>
+    <string name="settings_media_default_bitrate">پہلے سے طے شدہ AAC بٹ ریٹ</string>
+    <string name="settings_media_bg_notifications">پس منظر کی اطلاعات</string>
+    <string name="settings_media_bg_notifications_desc">پس منظر میں کام چلتے وقت نوٹیفکیشن دکھائیں</string>
+    <string name="settings_media_delete_after_save">محفوظ کرنے کے بعد کیش حذف کریں</string>
+    <string name="settings_media_delete_after_save_desc">ڈیوائس پر فائل محفوظ کرنے کے فوری بعد عارضی فائل صاف کریں</string>
+
+    <!-- Common Strings for Tool Shell & Jobs -->
+    <string name="common_output_filename">آؤٹ پٹ فائل کا نام</string>
+    <string name="common_change">تبدیل کریں</string>
+    <string name="common_close">بند کریں</string>
+    <string name="common_remove">ہٹائیں</string>
+</resources>

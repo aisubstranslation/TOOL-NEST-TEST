@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool19_no_audio">Selected file contains no audio track</string>
+    <string name="tool19_player_error">Unable to preview this audio on this device</string>
+    <string name="tool19_waveform_too_long">Waveform generation is skipped for audio longer than 60 minutes.</string>
+    <string name="tool19_waveform_failed">Waveform preview unavailable. You can still trim using the timeline.</string>
+    <string name="tool19_picker_title">Select Audio</string>
+    <string name="tool19_picker_formats">Supports MP3, WAV, AAC, M4A, FLAC, OGG, OPUS (up to 500 MB)</string>
+    <string name="tool19_waveform_title">Audio Waveform &amp; Trim</string>
+    <string name="tool19_waveform_generating">Analyzing waveform (%1$d%%)…</string>
+    <string name="tool19_preview_selection">Preview</string>
+    <string name="tool19_trim_points_title">Trim Boundaries</string>
+    <string name="tool19_start_time">Start Time</string>
+    <string name="tool19_end_time">End Time</string>
+    <string name="tool19_kept_cut_summary">Kept: %1$s (cut start: %2$s, cut end: %3$s)</string>
+    <string name="tool19_output_format">Output Format</string>
+    <string name="tool19_aac_bitrate">Bitrate (AAC)</string>
+    <string name="tool19_aac_accuracy_note">Notice: AAC output is accurate to about one audio frame (around 23 ms); the saved length can differ by a few milliseconds.</string>
+    <string name="tool19_action_trim">Trim Audio</string>
+    <string name="tool19_success_title">Audio Trimmed Successfully</string>
+    <string name="tool19_unsaved_dialog_title">Discard Changes?</string>
+    <string name="tool19_unsaved_dialog_desc">You have unsaved trim boundary changes. Are you sure you want to discard them?</string>
+</resources>

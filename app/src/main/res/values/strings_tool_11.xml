@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool11_picker_title">Select PDF to Split</string>
+    <string name="tool11_picker_subtitle">PDF documents up to 150 MB</string>
+    <string name="tool11_pages_count">%1$d pages</string>
+    <string name="tool11_mode_extract">Extract Pages</string>
+    <string name="tool11_mode_all_pages">All Single Pages</string>
+    <string name="tool11_mode_by_ranges">Custom Ranges</string>
+    <string name="tool11_extract_hint">Extract selected pages into one new PDF document.</string>
+    <string name="tool11_ranges_hint">Split into separate PDFs by ranges (e.g. 1-3, 4-7).</string>
+    <string name="tool11_page_range_label">Page Range</string>
+    <string name="tool11_page_range_placeholder">e.g. 1-3, 5, 8</string>
+    <string name="tool11_btn_split">Split PDF</string>
+    <string name="tool11_btn_extract">Extract Pages</string>
+    <string name="tool11_processing">Splitting PDF…</string>
+    <string name="tool11_success_title">PDF Split Successfully</string>
+    <string name="tool11_success_desc_multi">Generated %1$d PDF files.</string>
+    <string name="tool11_btn_save_pdf">Save PDF</string>
+    <string name="tool11_btn_save_zip">Save all as ZIP</string>
+    <string name="tool11_btn_save_folder">Save to Folder</string>
+    <string name="tool11_btn_share_all">Share All</string>
+    <string name="tool11_btn_share">Share</string>
+    <string name="tool11_btn_open">Open</string>
+    <string name="tool11_folder_save_success">Saved %1$d files to folder</string>
+    <string name="tool11_error_empty_range">Please enter a valid page range.</string>
+</resources>

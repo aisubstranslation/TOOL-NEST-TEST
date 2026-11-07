@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool19_no_audio">منتخب فائل میں کوئی آڈیو ٹریک نہیں ہے</string>
+    <string name="tool19_player_error">اس ڈیوائس پر آڈیو چلانے میں ناکامی</string>
+    <string name="tool19_waveform_too_long">60 منٹ سے طویل آڈیو کے لیے ویوفارم جنریشن چھوڑ دی گئی ہے۔</string>
+    <string name="tool19_waveform_failed">ویوفارم ڈیکوڈ نہیں ہو سکی۔ آپ ٹائم لائن کے ذریعے آڈیو کاٹ سکتے ہیں۔</string>
+    <string name="tool19_picker_title">آڈیو منتخب کریں</string>
+    <string name="tool19_picker_formats">سپورٹ: MP3, WAV, AAC, M4A, FLAC, OGG, OPUS (زیادہ سے زیادہ 500 MB)</string>
+    <string name="tool19_waveform_title">آڈیو ویوفارم اور ٹرم</string>
+    <string name="tool19_waveform_generating">ویوفارم کا تجزیہ جاری ہے (%1$d%%)…</string>
+    <string name="tool19_preview_selection">پیش نظارہ</string>
+    <string name="tool19_trim_points_title">ٹرم کی حدود</string>
+    <string name="tool19_start_time">ابتدائی وقت</string>
+    <string name="tool19_end_time">آخری وقت</string>
+    <string name="tool19_kept_cut_summary">محفوظ: %1$s (شروع سے کٹا: %2$s، آخر سے کٹا: %3$s)</string>
+    <string name="tool19_output_format">آؤٹ پٹ فارمیٹ</string>
+    <string name="tool19_aac_bitrate">بٹ ریٹ (AAC)</string>
+    <string name="tool19_aac_accuracy_note">نوٹ: AAC آؤٹ پٹ ایک آڈیو فریم (تقریباً 23 ms) تک درست ہوتا ہے؛ اصل وقت چند ملی سیکنڈ مختلف ہو سکتا ہے۔</string>
+    <string name="tool19_action_trim">آڈیو کاٹیں</string>
+    <string name="tool19_success_title">آڈیو کامیابی سے کٹ گئی</string>
+    <string name="tool19_unsaved_dialog_title">تبدیلیاں مسترد کریں؟</string>
+    <string name="tool19_unsaved_dialog_desc">آپ کے پاس غیر محفوظ شدہ انتخاب موجود ہے۔ کیا آپ واپس جانا چاہتے ہیں؟</string>
+</resources>

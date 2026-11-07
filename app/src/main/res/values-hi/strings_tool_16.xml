@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool16_picker_title">वीडियो चुनें</string>
+    <string name="tool16_picker_desc">ऑडियो ट्रैक निकालने के लिए वीडियो चुनें</string>
+    <string name="tool16_no_audio">चुने गए वीडियो में कोई ऑडियो ट्रैक नहीं है</string>
+    <string name="tool16_audio_copy_note">ऑडियो बिना दोबारा एन्कोड किए निकाला जा सकता है</string>
+    <string name="tool16_audio_reencode_note">ऑडियो को AAC M4A में एन्कोड किया जाएगा</string>
+    <string name="tool16_wav_note">ऑडियो को असम्पीडित 16-बिट PCM WAV में बदला जाएगा</string>
+    <string name="tool16_action_extract">ऑडियो निकालें</string>
+    <string name="tool16_success_title">ऑडियो सफलतापूर्वक निकाला गया</string>
+</resources>

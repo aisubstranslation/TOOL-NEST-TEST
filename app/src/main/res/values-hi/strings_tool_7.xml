@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool7_select_files">हैश के लिए फ़ाइलें चुनें</string>
+    <string name="tool7_file_picker_hint">SHA-256 क्रिप्टोग्राफ़िक चेकसम की गणना के लिए 20 तक फ़ाइलें चुनें।</string>
+    <string name="tool7_start_button">SHA-256 हैश उत्पन्न करें</string>
+    <string name="tool7_expected_hash_label">अपेक्षित हैश से तुलना करें</string>
+    <string name="tool7_expected_hash_hint">यहाँ 64-अक्षर का हैश पेस्ट करें</string>
+    <string name="tool7_hash_match">मेल खाता है ✓</string>
+    <string name="tool7_hash_no_match">मेल नहीं खाता ✗</string>
+    <string name="tool7_copy_hash">कॉपी</string>
+    <string name="tool7_copy_all">सभी हैश कॉपी करें</string>
+    <string name="tool7_share_hashes">हैश साझा करें</string>
+    <string name="tool7_export_txt">.txt के रूप में निर्यात करें</string>
+    <string name="tool7_hash_copied">हैश क्लिपबोर्ड पर कॉपी हो गया</string>
+    <string name="tool7_all_copied">सभी हैश क्लिपबोर्ड पर कॉपी हो गए</string>
+    <string name="tool7_export_success">चेकसम सफलतापूर्वक निर्यात किया गया</string>
+    <string name="tool7_results_title">गणना किए गए SHA-256 चेकसम</string>
+    <string name="tool7_process_again">और फ़ाइलें हैश करें</string>
+</resources>

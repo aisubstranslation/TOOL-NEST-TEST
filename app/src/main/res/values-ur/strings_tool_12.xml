@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool12_picker_title">کمپریس کرنے کے لیے پی ڈی ایف منتخب کریں</string>
+    <string name="tool12_picker_desc">فائل سائز کم کرنے کے لیے پی ڈی ایف دستاویز منتخب کریں</string>
+    <string name="tool12_mode">کمپریشن کا طریقہ</string>
+    <string name="tool12_mode_a_title">تصاویر بہتر بنائیں (متن برقرار رہتا ہے)</string>
+    <string name="tool12_mode_a_desc">تصاویر کا سائز کم کرتا ہے جبکہ متن اور سرچ کی سہولت برقرار رہتی ہے۔</string>
+    <string name="tool12_mode_b_title">زیادہ سے زیادہ کمی (صفحات تصویر بن جائیں گے)</string>
+    <string name="tool12_mode_b_desc">صفحات کو تصاویر میں تبدیل کرتا ہے۔ انتباہ: متن قابل انتخاب یا سرچ کے قابل نہیں رہے گا۔</string>
+    <string name="tool12_preset">کمپریشن لیول</string>
+    <string name="tool12_preset_high">بہتر معیار</string>
+    <string name="tool12_preset_balanced">متوازن</string>
+    <string name="tool12_preset_smaller">سب سے چھوٹا سائز</string>
+    <string name="tool12_btn_compress">پی ڈی ایف کمپریس کریں</string>
+    <string name="tool12_reduced_label">%1$d%% کمی واقع ہوئی (%2$s سے %3$s)</string>
+    <string name="tool12_no_reduction_title">اس فائل کا سائز مزید کم نہیں ہو سکتا</string>
+    <string name="tool12_no_reduction_desc">اس دستاویز میں زیادہ تر سادہ متن ہے یا تصاویر پہلے ہی کمپریسڈ ہیں۔</string>
+    <string name="tool12_save_anyway">پھر بھی محفوظ کریں</string>
+</resources>

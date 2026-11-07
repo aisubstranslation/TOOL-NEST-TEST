@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool18_no_video">Selected file contains no video track</string>
+    <string name="tool18_picker_title">Select Video</string>
+    <string name="tool18_picker_desc">Choose a video to compress (MP4, MKV, WebM, MOV, max 1000 MB)</string>
+    <string name="tool18_resolution_title">Resolution</string>
+    <string name="tool18_target_resolution">Target: %1$d × %2$d (preserves aspect ratio)</string>
+    <string name="tool18_quality_title">Compression Quality</string>
+    <string name="tool18_audio_title">Audio Track</string>
+    <string name="tool18_audio_keep">Keep Original</string>
+    <string name="tool18_audio_remove">Remove Audio</string>
+    <string name="tool18_estimate_label">Estimated Output Size</string>
+    <string name="tool18_little_reduction_warning">Little or no size reduction expected for these settings.</string>
+    <string name="tool18_codec_note">Video is compressed using H.264 (MP4) for maximum device compatibility.</string>
+    <string name="tool18_ram_note">On a phone with 2 GB RAM, big videos can take a long time. You can leave the app; progress shows in the notification.</string>
+    <string name="tool18_hdr_note">Notice: HDR videos may fail or look different.</string>
+    <string name="tool18_action_compress">Compress Video</string>
+    <string name="tool18_success_title">Video Compressed Successfully</string>
+    <string name="tool18_size_reduced">Saved %1$d%% • Resolution: %2$s</string>
+    <string name="tool18_size_larger_warning">Notice: Output file is larger than the original.</string>
+    <string name="tool18_save_gallery">Save to Gallery</string>
+    <string name="tool18_saved_to_gallery">Saved to Movies/TOOLSNEST</string>
+    <string name="tool18_play_preview">Play preview</string>
+    <string name="tool18_quality_high">High</string>
+    <string name="tool18_quality_balanced">Balanced</string>
+    <string name="tool18_quality_small">Small</string>
+    <string name="tool18_res_original">Original</string>
+</resources>

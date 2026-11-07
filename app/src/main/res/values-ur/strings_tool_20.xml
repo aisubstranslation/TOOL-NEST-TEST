@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool20_picker_title">پس منظر ہٹانے کے لیے تصویر منتخب کریں</string>
+    <string name="tool20_picker_desc">PNG، JPEG یا WebP زیادہ سے زیادہ 50 ایم بی / 16 میگا پکسل</string>
+    <string name="tool20_detecting">آف لائن ماڈل سے موضوع کی شناخت ہو رہی ہے…</string>
+    <string name="tool20_stage_loading">ماڈل لوڈ ہو رہا ہے…</string>
+    <string name="tool20_model_missing_hint">براہ کرم u2netp.onnx کو assets/models ڈائریکٹری میں رکھیں۔</string>
+
+    <string name="tool20_tab_cutout">کٹ آؤٹ</string>
+    <string name="tool20_tab_original">اصل تصویر</string>
+    <string name="tool20_tab_compare">موازنہ</string>
+    <string name="tool20_tab_checkerboard">شفاف چیکر</string>
+
+    <string name="tool20_manual_edit_title">دستی تدوین و درستی</string>
+    <string name="tool20_mode_preview">دیکھیں</string>
+    <string name="tool20_mode_brush">برش</string>
+    <string name="tool20_brush_erase">مٹائیں</string>
+    <string name="tool20_brush_restore">بحال کریں</string>
+    <string name="tool20_brush_size">برش کا سائز</string>
+    <string name="tool20_edge_softness">کناروں کی نرمی</string>
+    <string name="tool20_reset_tooltip">ماڈل کی اصل شناخت پر واپس جائیں</string>
+
+    <string name="tool20_bg_title">پس منظر کی تبدیلی</string>
+    <string name="tool20_bg_transparent">شفاف</string>
+    <string name="tool20_bg_white">سفید</string>
+    <string name="tool20_bg_black">سیاہ</string>
+    <string name="tool20_bg_image">تصویر</string>
+    <string name="tool20_bg_image_load_failed">بیک گراؤنڈ تصویر لوڈ نہیں کی جا سکی۔</string>
+
+    <string name="tool20_export_format">آؤٹ پٹ فارمیٹ</string>
+    <string name="tool20_honest_note">جب ایک واضح بنیادی موضوع ہو تو بہترین کام کرتا ہے۔ چھوٹا آف لائن ماڈل بالوں اور باریک چیزوں کے کناروں پر کچھ خامی چھوڑ سکتا ہے؛ برش سے درست کریں۔ اس اسکرین سے باہر جانے پر ڈٹیکشن منسوخ ہو جائے گی، جبکہ ایکسپورٹ بیک گراؤنڈ جاب کے طور پر جاری رہے گی۔ کوئی ڈیٹا آپ کے فون سے باہر نہیں جاتا۔</string>
+    <string name="tool20_action_export">کٹ آؤٹ محفوظ کریں</string>
+
+
+    <string name="tool20_unsaved_title">تبدیلیاں مسترد کریں؟</string>
+    <string name="tool20_unsaved_desc">آپ کے پاس غیر محفوظ شدہ برش یا پس منظر کی تبدیلیاں ہیں۔ واپس جانے پر یہ ختم ہو جائیں گی۔</string>
+    <string name="tool20_detection_uncertain">ماڈل موضوع کی مکمل شناخت میں غیر یقینی تھا؛ براہ کرم برش کے ذریعے درست کریں۔</string>
+    <string name="tool20_zoom_hint">برش فوراً کام کرتا ہے۔ دو انگلیوں سے زوم اور تصویر کو حرکت دیں، پھر باریک کام کے لیے ایک انگلی سے برش چلائیں۔</string>
+</resources>

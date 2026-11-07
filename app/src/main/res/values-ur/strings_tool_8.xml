@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool8_add_files">فائلیں شامل کریں</string>
+    <string name="tool8_add_folder">فولڈر شامل کریں</string>
+    <string name="tool8_picker_hint">متعدد فائلیں اور/یا فولڈر شامل کریں (5000 اشیاء تک، کل 1.5 GB تک)۔</string>
+    <string name="tool8_items_summary">%1$d اشیاء • %2$s</string>
+    <string name="tool8_output_name_label">ZIP آرکائیو کا نام</string>
+    <string name="tool8_compression_mode">کمپریشن موڈ</string>
+    <string name="tool8_compression_normal">عام (ڈیفلیٹڈ - کم سائز)</string>
+    <string name="tool8_compression_store">اسٹور (بغیر کمپریشن - تیز رفتار)</string>
+    <string name="tool8_start_button">ZIP آرکائیو بنائیں</string>
+    <string name="tool8_unreadable_title">ناقابل رسائی فائلیں ملیں</string>
+    <string name="tool8_unreadable_desc">مندرجہ ذیل اشیاء تک رسائی حاصل نہیں ہو سکی۔ کیا آپ ان کے بغیر جاری رکھنا چاہتے ہیں؟</string>
+    <string name="tool8_continue_without">ان کے بغیر جاری رکھیں</string>
+    <string name="tool8_cancel_archive">منسوخ کریں</string>
+    <string name="tool8_result_title">ZIP آرکائیو تیار ہے</string>
+    <string name="tool8_archive_size">آرکائیو سائز</string>
+    <string name="tool8_entries_count">کل فائلیں</string>
+    <string name="tool8_input_size">اصل ان پٹ سائز</string>
+    <string name="tool8_compression_saved">بچائی گئی جگہ</string>
+    <string name="tool8_error_limit_entries">مزید اشیاء شامل نہیں کی جا سکتیں: 5000 اشیاء کی حد سے تجاوز ہے۔</string>
+    <string name="tool8_error_limit_size">اشیاء شامل نہیں ہو سکتیں: کل سائز 1.5 GB کی حد سے تجاوز کر گیا۔</string>
+    <string name="tool8_clear_all">تمام صاف کریں</string>
+</resources>

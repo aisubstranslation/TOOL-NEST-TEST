@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool13_picker_title">पीडीएफ दस्तावेज़ चुनें</string>
+    <string name="tool13_picker_desc">पृष्ठों को चित्रों में बदलने के लिए पीडीएफ फ़ाइल चुनें</string>
+    <string name="tool13_page_range">परिवर्तित करने हेतु पृष्ठ</string>
+    <string name="tool13_range_all">सभी पृष्ठ (%1$d)</string>
+    <string name="tool13_range_custom">कस्टम पृष्ठ श्रेणी</string>
+    <string name="tool13_range_placeholder">उदा. 1-3, 5, 7-9</string>
+    <string name="tool13_format">चित्र प्रारूप</string>
+    <string name="tool13_format_png">PNG (बिना गुणवत्ता हानि)</string>
+    <string name="tool13_format_jpeg">JPEG</string>
+    <string name="tool13_quality">JPEG गुणवत्ता (%1$d%%)</string>
+    <string name="tool13_resolution">रिज़ॉल्यूशन (DPI)</string>
+    <string name="tool13_error_exceeds_16mp">पृष्ठ %1$d पर %2$d DPI का रिज़ॉल्यूशन 16 मेगापिक्सेल (%3$d × %4$d px) से अधिक हो जाएगा। कृपया कम DPI चुनें।</string>
+    <string name="tool13_btn_convert">चित्रों में बदलें</string>
+    <string name="tool13_success_title">चित्र तैयार हुए (%1$d)</string>
+    <string name="tool13_action_zip">ZIP के रूप में सहेजें</string>
+    <string name="tool13_action_folder">फ़ोल्डर में सहेजें</string>
+    <string name="tool13_action_gallery">गैलरी में सहेजें</string>
+    <string name="tool13_action_share">सभी साझा करें</string>
+    <string name="tool13_saved_to_gallery">%1$d चित्र Pictures/TOOLSNEST में सहेजे गए</string>
+</resources>

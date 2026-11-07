@@ -1,0 +1,525 @@
+package com.example.tools.image
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.PinDrop
+import androidx.compose.material.icons.filled.Psychology
+import androidx.compose.material.icons.filled.VerifiedUser
+import androidx.compose.material.icons.filled.Warning
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Slider
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import com.example.R
+import com.example.engine.ImageEngine
+import com.example.engine.MetadataScanner
+import com.example.engine.OutputFormat
+import com.example.engine.ProcessImageOptions
+import com.example.engine.ScannedMetadata
+import com.example.file.FileLayer
+import com.example.tools.common.ErrorCard
+import com.example.tools.common.FilePickerCard
+import com.example.tools.common.FileResult
+import com.example.tools.common.JobResult
+import com.example.tools.common.JobState
+import com.example.tools.common.ProgressCard
+import com.example.tools.common.ResultCard
+import com.example.tools.common.SelectedFileItem
+import com.example.tools.common.SelectedFileRow
+import com.example.tools.common.ToolJobRunner
+import com.example.tools.common.ToolScaffold
+import androidx.compose.runtime.saveable.rememberSaveable
+import com.example.tools.common.FileSelectionHelper
+import com.example.tools.common.SelectedFileListSaver
+import java.io.File
+import java.io.FileInputStream
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+
+@Composable
+fun MetadataRemoverScreen(
+  onBack: () -> Unit,
+  modifier: Modifier = Modifier
+) {
+  val context = LocalContext.current
+  val selectedFiles = rememberSaveable(saver = SelectedFileListSaver) { mutableStateListOf<SelectedFileItem>() }
+  var pickerErrorMessage by rememberSaveable { mutableStateOf<String?>(null) }
+  val coroutineScope = androidx.compose.runtime.rememberCoroutineScope()
+  val scannedAudits = remember { mutableStateListOf<Pair<SelectedFileItem, ScannedMetadata>>() }
+
+  // Re-sync scannedAudits if restored from saved instance state
+  LaunchedEffect(selectedFiles.size) {
+    if (scannedAudits.size != selectedFiles.size) {
+      scannedAudits.clear()
+      val audits = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+        selectedFiles.map { item ->
+          val headerBytes = ByteArray(128 * 1024)
+          var readCount = 0
+          runCatching {
+            context.contentResolver.openInputStream(item.uri)?.use { stream ->
+              readCount = stream.read(headerBytes)
+            }
+          }
+          val scanned = MetadataScanner.scan(headerBytes.copyOf(maxOf(0, readCount)))
+          item to scanned
+        }
+      }
+      scannedAudits.addAll(audits)
+    }
+  }
+
+  var outputFormat by remember { mutableStateOf(OutputFormat.JPEG) }
+  var qualitySlider by remember { mutableFloatStateOf(92f) }
+
+  var currentJobId by androidx.compose.runtime.saveable.rememberSaveable { mutableStateOf<String?>(null) }
+  val jobUi by remember(currentJobId) {
+    if (currentJobId != null) ToolJobRunner.observe(currentJobId!!)
+    else kotlinx.coroutines.flow.flowOf(null)
+  }.collectAsState(initial = null)
+
+  LaunchedEffect(currentJobId) {
+    val id = currentJobId
+    if (id != null && !ToolJobRunner.hasJob(id)) {
+      currentJobId = null
+      pickerErrorMessage = context.getString(R.string.common_job_restored_lost)
+    }
+  }
+
+  var completedAudits by remember { mutableStateOf<List<Pair<FileResult, ScannedMetadata>>>(emptyList()) }
+
+  ToolScaffold(
+    title = stringResource(R.string.tool5_name),
+    onBack = onBack,
+    modifier = modifier
+  ) { padding ->
+    LazyColumn(
+      modifier = Modifier
+        .fillMaxSize()
+        .padding(padding)
+        .testTag("tool_screen_5"),
+      contentPadding = PaddingValues(16.dp),
+      verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
+      // 1. Result State (with BEFORE vs AFTER Verification)
+      if (jobUi != null && jobUi?.state == JobState.SUCCESS && jobUi?.result != null) {
+        val files = jobUi!!.result!!.files
+
+        items(files) { fileResult ->
+          val audit = completedAudits.find { it.first.inputName == fileResult.inputName }
+
+          Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            ResultCard(
+              fileResult = fileResult,
+              onProcessAnother = {
+                currentJobId = null
+                selectedFiles.clear()
+                scannedAudits.clear()
+                completedAudits = emptyList()
+              },
+              onDone = onBack
+            )
+
+            // Verification Card
+            if (audit != null) {
+              Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(14.dp),
+                colors = CardDefaults.cardColors(
+                  containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f)
+                )
+              ) {
+                Column(
+                  modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(14.dp),
+                  verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                  Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                  ) {
+                    Icon(
+                      imageVector = Icons.Default.VerifiedUser,
+                      contentDescription = null,
+                      tint = MaterialTheme.colorScheme.primary,
+                      modifier = Modifier.size(20.dp)
+                    )
+                    Text(
+                      text = stringResource(R.string.tool5_after_title),
+                      style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold)
+                    )
+                  }
+
+                  val after = audit.second
+                  if (!after.hasAnyMetadata) {
+                    Row(
+                      verticalAlignment = Alignment.CenterVertically,
+                      horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                      Icon(Icons.Default.Check, contentDescription = null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(16.dp))
+                      Text(
+                        text = "Exif, GPS, XMP, Comments: ${stringResource(R.string.tool5_removed_status)}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.primary
+                      )
+                    }
+                  } else {
+                    Text(
+                      text = "Remaining segments: ${after.detectedSegments.joinToString()}",
+                      style = MaterialTheme.typography.bodySmall,
+                      color = MaterialTheme.colorScheme.error
+                    )
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // 2. Running State
+      else if (jobUi != null && jobUi?.state == JobState.RUNNING) {
+        item {
+          ProgressCard(
+            stage = jobUi!!.stage,
+            progressPercent = jobUi!!.progressPercent,
+            currentIndex = jobUi!!.currentIndex,
+            totalFiles = jobUi!!.totalFiles,
+            currentFileName = jobUi!!.currentFileName,
+            onCancel = { currentJobId?.let { ToolJobRunner.cancel(it) } }
+          )
+        }
+      }
+      // 3. Error State
+      else if (jobUi != null && (jobUi?.state == JobState.FAILED || jobUi?.state == JobState.CANCELLED)) {
+        item {
+          ErrorCard(
+            message = jobUi?.errorMessage ?: jobUi?.stage ?: "Metadata stripping failed",
+            recoveryHint = "Try selecting fewer images or check storage.",
+            onRetry = { currentJobId = null }
+          )
+        }
+      }
+      // 4. Configuration State
+      else {
+        // Honest Help Notice
+        item {
+          Card(
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(14.dp),
+            colors = CardDefaults.cardColors(
+              containerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f)
+            )
+          ) {
+            Row(
+              modifier = Modifier.padding(14.dp),
+              horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+              Icon(
+                imageVector = Icons.Default.Info,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSecondaryContainer,
+                modifier = Modifier.size(24.dp)
+              )
+              Text(
+                text = stringResource(R.string.tool5_honest_notice),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSecondaryContainer
+              )
+            }
+          }
+        }
+
+        // File Picker
+        item {
+          FilePickerCard(
+            onFilesSelected = { uris ->
+              coroutineScope.launch {
+                pickerErrorMessage = null
+                val result = FileSelectionHelper.loadSelectedImages(
+                  context = context,
+                  uris = uris,
+                  currentItems = selectedFiles,
+                  onFileError = { name, err ->
+                    pickerErrorMessage = "$name: $err"
+                  }
+                )
+                selectedFiles.clear()
+                selectedFiles.addAll(result.updatedList)
+
+                val audits = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                  result.updatedList.map { item ->
+                    val headerBytes = ByteArray(128 * 1024)
+                    var readCount = 0
+                    runCatching {
+                      context.contentResolver.openInputStream(item.uri)?.use { stream ->
+                        readCount = stream.read(headerBytes)
+                      }
+                    }
+                    val scanned = MetadataScanner.scan(headerBytes.copyOf(maxOf(0, readCount)))
+                    item to scanned
+                  }
+                }
+                scannedAudits.clear()
+                scannedAudits.addAll(audits)
+
+                if (result.overflowCount > 0) {
+                  pickerErrorMessage = context.getString(R.string.common_max_images_reached)
+                }
+              }
+            },
+            maxFiles = 20,
+            supportedFormatsText = stringResource(R.string.tool5_supported_formats)
+          )
+        }
+
+        // Picker Error Card if any file failed to load
+        if (pickerErrorMessage != null) {
+          item {
+            ErrorCard(
+              message = pickerErrorMessage!!,
+              recoveryHint = stringResource(R.string.common_images_recovery_hint),
+              onRetry = { pickerErrorMessage = null }
+            )
+          }
+        }
+
+        // Selected files & scanned metadata inspection
+        if (selectedFiles.isNotEmpty()) {
+          items(scannedAudits) { (fileItem, scanned) ->
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+              SelectedFileRow(
+                fileItem = fileItem,
+                onRemove = {
+                  selectedFiles.remove(fileItem)
+                  scannedAudits.removeAll { it.first == fileItem }
+                }
+              )
+
+              // BEFORE metadata inspection card
+              Surface(
+                shape = RoundedCornerShape(10.dp),
+                color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(horizontal = 4.dp)
+              ) {
+                Column(
+                  modifier = Modifier.padding(10.dp),
+                  verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                  Text(
+                    text = stringResource(R.string.tool5_before_title),
+                    style = MaterialTheme.typography.labelMedium.copy(fontWeight = FontWeight.Bold),
+                    color = MaterialTheme.colorScheme.primary
+                  )
+
+                  if (scanned.hasGps) {
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                      Icon(Icons.Default.PinDrop, contentDescription = null, tint = MaterialTheme.colorScheme.error, modifier = Modifier.size(14.dp))
+                      Text(stringResource(R.string.tool5_gps_present), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
+                    }
+                  }
+
+                  if (scanned.hasCameraInfo || !scanned.cameraMakeModel.isNullOrBlank()) {
+                    Text(
+                      text = "${stringResource(R.string.tool5_camera_info)}: ${scanned.cameraMakeModel ?: "Present"}",
+                      style = MaterialTheme.typography.bodySmall
+                    )
+                  }
+
+                  if (scanned.hasAiGenerationMarkers) {
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                      Icon(Icons.Default.Psychology, contentDescription = null, tint = MaterialTheme.colorScheme.secondary, modifier = Modifier.size(14.dp))
+                      Text(stringResource(R.string.tool5_ai_markers), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.secondary)
+                    }
+                  }
+
+                  if (scanned.detectedSegments.isNotEmpty()) {
+                    Text(
+                      text = "Segments: ${scanned.detectedSegments.joinToString()}",
+                      style = MaterialTheme.typography.bodySmall,
+                      color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                  }
+
+                  if (!scanned.hasAnyMetadata) {
+                    Text(
+                      text = stringResource(R.string.tool5_clean_notice),
+                      style = MaterialTheme.typography.bodySmall,
+                      color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                  }
+                }
+              }
+            }
+          }
+
+          // Options Card
+          item {
+            Card(
+              modifier = Modifier.fillMaxWidth(),
+              shape = RoundedCornerShape(16.dp),
+              colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+              elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
+            ) {
+              Column(
+                modifier = Modifier
+                  .fillMaxWidth()
+                  .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+              ) {
+                // Output Format
+                Text(
+                  text = stringResource(R.string.tool1_output_format),
+                  style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold)
+                )
+
+                Row(
+                  modifier = Modifier.fillMaxWidth(),
+                  horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                  OutputFormat.entries.forEach { fmt ->
+                    Row(
+                      verticalAlignment = Alignment.CenterVertically,
+                      modifier = Modifier.clickable { outputFormat = fmt }
+                    ) {
+                      RadioButton(
+                        selected = outputFormat == fmt,
+                        onClick = { outputFormat = fmt }
+                      )
+                      Text(
+                        text = fmt.name,
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.padding(start = 4.dp)
+                      )
+                    }
+                  }
+                }
+
+                // Quality Slider (for JPEG / WebP)
+                if (outputFormat != OutputFormat.PNG) {
+                  Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Row(
+                      modifier = Modifier.fillMaxWidth(),
+                      horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                      Text(
+                        text = stringResource(R.string.tool1_quality_label, qualitySlider.toInt()),
+                        style = MaterialTheme.typography.bodyMedium.copy(fontWeight = FontWeight.Medium)
+                      )
+                    }
+                    Slider(
+                      value = qualitySlider,
+                      onValueChange = { qualitySlider = it },
+                      valueRange = 70f..100f,
+                      steps = 6
+                    )
+                  }
+                }
+
+                // Start Strip Metadata Button
+                Button(
+                  enabled = selectedFiles.isNotEmpty() && !ToolJobRunner.isToolBusy(5),
+                  onClick = {
+                    val filesToProcess = selectedFiles.toList()
+                    val fmt = outputFormat
+                    val q = qualitySlider.toInt()
+
+                    val jobId = ToolJobRunner.start(
+                      toolId = 5,
+                      inputName = filesToProcess.firstOrNull()?.name ?: "Images",
+                      optionsJson = "format=$fmt,quality=$q"
+                    ) {
+                      val tempDir = FileLayer.getTempFolder(context)
+                      val results = mutableListOf<FileResult>()
+                      val postAudits = mutableListOf<Pair<FileResult, ScannedMetadata>>()
+
+                      filesToProcess.forEachIndexed { index, item ->
+                        reportProgress(
+                          percent = ((index.toFloat() / filesToProcess.size) * 100).toInt(),
+                          stage = "Stripping metadata from ${item.name}...",
+                          currentIndex = index + 1,
+                          totalFiles = filesToProcess.size,
+                          currentFileName = item.name
+                        )
+
+                        val res = ImageEngine.processImage(
+                          context = context,
+                          uri = item.uri,
+                          originalName = item.name,
+                          options = ProcessImageOptions(
+                            format = fmt,
+                            quality = q
+                          ),
+                          jobContext = this,
+                          targetCacheDir = tempDir
+                        )
+                        results.add(res)
+
+                        // Scan AFTER
+                        if (res.success && res.tempFilePath != null) {
+                          val outBytes = File(res.tempFilePath).readBytes()
+                          val afterScan = MetadataScanner.scan(outBytes)
+                          postAudits.add(res to afterScan)
+                        }
+                      }
+
+                      completedAudits = postAudits
+                      JobResult(files = results)
+                    }
+
+                    currentJobId = jobId
+                  },
+                  modifier = Modifier
+                    .fillMaxWidth()
+                    .testTag("start_strip_metadata_button"),
+                  shape = RoundedCornerShape(12.dp)
+                ) {
+                  Text(
+                    text = stringResource(R.string.tool5_start_button),
+                    style = MaterialTheme.typography.titleSmall.copy(fontWeight = FontWeight.Bold)
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

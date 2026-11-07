@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool14_picker_title">Select Images</string>
+    <string name="tool14_picker_desc">Choose up to 50 images to assemble into a PDF</string>
+    <string name="tool14_page_size">Page Size</string>
+    <string name="tool14_page_size_a4">A4 (595 × 842 pt)</string>
+    <string name="tool14_page_size_letter">Letter (612 × 792 pt)</string>
+    <string name="tool14_page_size_fit">Fit to Image</string>
+    <string name="tool14_orientation">Orientation</string>
+    <string name="tool14_orientation_auto">Auto (per image)</string>
+    <string name="tool14_orientation_portrait">Portrait</string>
+    <string name="tool14_orientation_landscape">Landscape</string>
+    <string name="tool14_margin">Margins</string>
+    <string name="tool14_margin_none">None</string>
+    <string name="tool14_margin_10mm">10 mm</string>
+    <string name="tool14_margin_20mm">20 mm</string>
+    <string name="tool14_quality">Quality</string>
+    <string name="tool14_quality_high">High (~300 DPI, 90%)</string>
+    <string name="tool14_quality_medium">Medium (~150 DPI, 75%)</string>
+    <string name="tool14_quality_desc">High preserves up to 300 DPI for printing. Medium scales to 150 DPI for smaller PDF size.</string>
+    <string name="tool14_png_notice">Notice: Transparent areas will be flattened onto a clean white background.</string>
+    <string name="tool14_btn_convert">Convert to PDF</string>
+    <string name="tool14_add_more">Add Images</string>
+    <string name="tool14_move_up">Move up</string>
+    <string name="tool14_move_down">Move down</string>
+    <string name="tool14_rotate">Rotate 90°</string>
+    <string name="tool14_remove">Remove</string>
+    <string name="tool14_error_max_images">You can select a maximum of 50 images.</string>
+    <string name="tool14_success_title">PDF Created Successfully</string>
+    <string name="tool14_page_count">%1$d pages</string>
+    <string name="tool14_page_count_one">1 page</string>
+</resources>

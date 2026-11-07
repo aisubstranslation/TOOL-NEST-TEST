@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool7_select_files">ہیش کے لیے فائلیں منتخب کریں</string>
+    <string name="tool7_file_picker_hint">SHA-256 کرپٹوگرافک چیک سم کے لیے 20 تک فائلیں منتخب کریں۔</string>
+    <string name="tool7_start_button">SHA-256 ہیشز بنائیں</string>
+    <string name="tool7_expected_hash_label">متوقع ہیش سے موازنہ کریں</string>
+    <string name="tool7_expected_hash_hint">یہاں 64 حرفی ہیش پیسٹ کریں</string>
+    <string name="tool7_hash_match">مطابقت رکھتا ہے ✓</string>
+    <string name="tool7_hash_no_match">مطابقت نہیں رکھتا ✗</string>
+    <string name="tool7_copy_hash">کاپی</string>
+    <string name="tool7_copy_all">تمام ہیشز کاپی کریں</string>
+    <string name="tool7_share_hashes">ہیشز شیئر کریں</string>
+    <string name="tool7_export_txt">بطور .txt ایکسپورٹ کریں</string>
+    <string name="tool7_hash_copied">ہیش کلپ بورڈ پر کاپی ہو گیا</string>
+    <string name="tool7_all_copied">تمام ہیشز کلپ بورڈ پر کاپی ہو گئیں</string>
+    <string name="tool7_export_success">چیک سم فائل کامیابی سے محفوظ ہو گئی</string>
+    <string name="tool7_results_title">حساب شدہ SHA-256 چیک سمز</string>
+    <string name="tool7_process_again">مزید فائلیں ہیش کریں</string>
+</resources>

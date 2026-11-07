@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool8_add_files">फ़ाइलें जोड़ें</string>
+    <string name="tool8_add_folder">फ़ोल्डर जोड़ें</string>
+    <string name="tool8_picker_hint">एकाधिक फ़ाइलें और/या फ़ोल्डर जोड़ें (5000 आइटम तक, कुल 1.5 GB तक)।</string>
+    <string name="tool8_items_summary">%1$d आइटम • %2$s</string>
+    <string name="tool8_output_name_label">ZIP संग्रह का नाम</string>
+    <string name="tool8_compression_mode">संपीड़न मोड</string>
+    <string name="tool8_compression_normal">सामान्य (डिफ्लेटेड - छोटा आकार)</string>
+    <string name="tool8_compression_store">स्टोर (कोई संपीड़न नहीं - तेज़)</string>
+    <string name="tool8_start_button">ZIP संग्रह बनाएं</string>
+    <string name="tool8_unreadable_title">अपठनीय फ़ाइलें पाई गईं</string>
+    <string name="tool8_unreadable_desc">निम्नलिखित मदों तक नहीं पहुँचा जा सका। क्या आप उनके बिना जारी रखना चाहते हैं?</string>
+    <string name="tool8_continue_without">उनके बिना जारी रखें</string>
+    <string name="tool8_cancel_archive">रद्द करें</string>
+    <string name="tool8_result_title">ZIP संग्रह तैयार है</string>
+    <string name="tool8_archive_size">संग्रह आकार</string>
+    <string name="tool8_entries_count">कुल प्रविष्टियाँ</string>
+    <string name="tool8_input_size">मूल इनपुट आकार</string>
+    <string name="tool8_compression_saved">बचत किया गया स्थान</string>
+    <string name="tool8_error_limit_entries">और आइटम नहीं जोड़े जा सकते: 5000 आइटम की अधिकतम सीमा पार हो गई।</string>
+    <string name="tool8_error_limit_size">आइटम नहीं जोड़े जा सकते: कुल आकार 1.5 GB की सीमा से अधिक है।</string>
+    <string name="tool8_clear_all">सभी साफ़ करें</string>
+</resources>

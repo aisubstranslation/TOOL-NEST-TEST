@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool12_picker_title">कंप्रेस करने के लिए पीडीएफ चुनें</string>
+    <string name="tool12_picker_desc">फ़ाइल आकार कम करने के लिए पीडीएफ दस्तावेज़ चुनें</string>
+    <string name="tool12_mode">कंप्रेशन मोड</string>
+    <string name="tool12_mode_a_title">चित्र अनुकूलित करें (टेक्स्ट सुरक्षित रहता है)</string>
+    <string name="tool12_mode_a_desc">चित्रों का आकार कम करता है जबकि सारा टेक्स्ट और खोज क्षमता सुरक्षित रहती है।</string>
+    <string name="tool12_mode_b_title">अधिकतम कमी (पृष्ठ चित्र बन जाएंगे)</string>
+    <string name="tool12_mode_b_desc">पृष्ठों को चित्रों में बदलता है। चेतावनी: टेक्स्ट चयन या खोज योग्य नहीं रहेगा।</string>
+    <string name="tool12_preset">कंप्रेशन स्तर</string>
+    <string name="tool12_preset_high">उच्च गुणवत्ता</string>
+    <string name="tool12_preset_balanced">संतुलित</string>
+    <string name="tool12_preset_smaller">सबसे छोटी फ़ाइल</string>
+    <string name="tool12_btn_compress">पीडीएफ कंप्रेस करें</string>
+    <string name="tool12_reduced_label">%1$d%% कमी हुई (%2$s से %3$s)</string>
+    <string name="tool12_no_reduction_title">इस फ़ाइल में आकार कम करना संभव नहीं है</string>
+    <string name="tool12_no_reduction_desc">इस दस्तावेज़ में मुख्य रूप से टेक्स्ट है या चित्र पहले से अनुकूलित हैं।</string>
+    <string name="tool12_save_anyway">फिर भी सहेजें</string>
+</resources>

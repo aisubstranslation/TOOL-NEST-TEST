@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool15_select_pdf">पीडीएफ चुनें</string>
+    <string name="tool15_pages_count">%1$d पृष्ठ</string>
+    <string name="tool15_select_all">सभी</string>
+    <string name="tool15_select_odd">विषम</string>
+    <string name="tool15_select_even">सम</string>
+    <string name="tool15_select_custom">कस्टम</string>
+    <string name="tool15_custom_range_placeholder">जैसे 1-3, 5, 8</string>
+    <string name="tool15_apply_range">लागू करें</string>
+    <string name="tool15_selected_count">%1$d पृष्ठ चयनित</string>
+    <string name="tool15_rotate_cw">90° दक्षिणावर्त</string>
+    <string name="tool15_rotate_180">180°</string>
+    <string name="tool15_rotate_ccw">90° वामावर्त</string>
+    <string name="tool15_reset">रीसेट</string>
+    <string name="tool15_page_label">पृष्ठ %1$d</string>
+    <string name="tool15_btn_rotate">परिवर्तन लागू करें</string>
+    <string name="tool15_processing">पृष्ठ घुमाए जा रहे हैं…</string>
+    <string name="tool15_success_title">पीडीएफ सफलतापूर्वक घूमा दी गई</string>
+    <string name="tool15_btn_save">पीडीएफ सहेजें</string>
+    <string name="tool15_btn_share">शेयर करें</string>
+    <string name="tool15_btn_open">खोलें</string>
+</resources>

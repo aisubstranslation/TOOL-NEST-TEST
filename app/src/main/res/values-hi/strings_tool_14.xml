@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool14_picker_title">चित्र चुनें</string>
+    <string name="tool14_picker_desc">पीडीएफ बनाने के लिए अधिकतम 50 चित्र चुनें</string>
+    <string name="tool14_page_size">पृष्ठ का आकार</string>
+    <string name="tool14_page_size_a4">A4 (595 × 842 pt)</string>
+    <string name="tool14_page_size_letter">Letter (612 × 792 pt)</string>
+    <string name="tool14_page_size_fit">चित्र के अनुसार आकार</string>
+    <string name="tool14_orientation">अभिविन्यास</string>
+    <string name="tool14_orientation_auto">स्वचालित (प्रत्येक चित्र अनुसार)</string>
+    <string name="tool14_orientation_portrait">पोर्ट्रेट (लंबवत)</string>
+    <string name="tool14_orientation_landscape">लैंडस्केप (क्षैतिज)</string>
+    <string name="tool14_margin">मार्जिन</string>
+    <string name="tool14_margin_none">कोई नहीं</string>
+    <string name="tool14_margin_10mm">10 मिमी</string>
+    <string name="tool14_margin_20mm">20 मिमी</string>
+    <string name="tool14_quality">गुणवत्ता</string>
+    <string name="tool14_quality_high">उच्च (~300 DPI, 90%)</string>
+    <string name="tool14_quality_medium">मध्यम (~150 DPI, 75%)</string>
+    <string name="tool14_quality_desc">उच्च गुणवत्ता प्रिंटिंग के लिए 300 DPI तक रखती है। मध्यम गुणवत्ता फ़ाइल आकार कम रखती है।</string>
+    <string name="tool14_png_notice">सूचना: पारदर्शी चित्रों की पृष्ठभूमि सफेद कर दी जाएगी।</string>
+    <string name="tool14_btn_convert">पीडीएफ बनाएं</string>
+    <string name="tool14_add_more">और चित्र जोड़ें</string>
+    <string name="tool14_move_up">ऊपर करें</string>
+    <string name="tool14_move_down">नीचे करें</string>
+    <string name="tool14_rotate">90° घुमाएं</string>
+    <string name="tool14_remove">हटाएं</string>
+    <string name="tool14_error_max_images">आप अधिकतम 50 चित्र चुन सकते हैं।</string>
+    <string name="tool14_success_title">पीडीएफ सफलतापूर्वक बनाई गई</string>
+    <string name="tool14_page_count">%1$d पृष्ठ</string>
+    <string name="tool14_page_count_one">1 पृष्ठ</string>
+</resources>

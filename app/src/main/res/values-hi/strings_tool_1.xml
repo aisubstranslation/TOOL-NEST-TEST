@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool1_quality_label">कंप्रेशन गुणवत्ता: %1$d%%</string>
+    <string name="tool1_quality_hint">JPEG और WebP पर लागू होता है। कम मान फ़ाइल का आकार घटाता है।</string>
+    <string name="tool1_png_note">PNG दोषरहित है, गुणवत्ता स्लाइडर का उपयोग नहीं होता।</string>
+    <string name="tool1_resize_toggle">वैकल्पिक आकार परिवर्तन</string>
+    <string name="tool1_resize_note">फ़ाइल का आकार और कम करने के लिए आयाम घटाएं</string>
+    <string name="tool1_output_format">आउटपुट प्रारूप</string>
+    <string name="tool1_custom_name">आउटपुट फ़ाइल नाम (वैकल्पिक)</string>
+    <string name="tool1_start_button">छवियां कंप्रेस करें</string>
+</resources>

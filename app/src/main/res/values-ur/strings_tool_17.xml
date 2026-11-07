@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool17_picker_title">آڈیو فائل منتخب کریں</string>
+    <string name="tool17_picker_formats">سپورٹ: MP3, WAV, AAC, M4A, FLAC, OGG, OPUS</string>
+    <string name="tool17_output_format">آؤٹ پٹ فارمیٹ</string>
+    <string name="tool17_format_note">M4A (AAC) چھوٹی فائلیں بناتا ہے۔ WAV بغیر نقصان والی ترمیم کے لیے 16 بٹ PCM فراہم کرتا ہے۔</string>
+    <string name="tool17_aac_bitrate">بٹ ریٹ (AAC)</string>
+    <string name="tool17_quality_honesty_note">کم کوالٹی سے WAV میں تبدیل کرنے سے اصل کوالٹی میں اضافہ نہیں ہوتا لیکن اصل آواز محفوظ رہتی ہے۔</string>
+    <string name="tool17_action_convert">آڈیو تبدیل کریں</string>
+    <string name="tool17_err_no_audio">منتخب فائل میں کوئی قابل استعمال آڈیو نہیں ہے</string>
+    <string name="tool17_success_title">آڈیو کامیابی سے تبدیل ہو گئی</string>
+</resources>

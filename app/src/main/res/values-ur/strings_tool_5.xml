@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool5_before_title">اصل فائل میں موجود میٹا ڈیٹا</string>
+    <string name="tool5_after_title">صفائی کے بعد تصدیق</string>
+    <string name="tool5_gps_present">GPS مقام کے نقاط موجود ہیں</string>
+    <string name="tool5_camera_info">کیمرہ ماڈل اور ہارڈویئر ٹیگز</string>
+    <string name="tool5_ai_markers">ممکنہ AI جنریشن یا مواد کے اسناد کے نشانات</string>
+    <string name="tool5_clean_notice">کوئی میٹا ڈیٹا نہیں ملا</string>
+    <string name="tool5_removed_status">کامیابی سے صاف ہو گیا</string>
+    <string name="tool5_honest_notice">ایماندارانہ وضاحت: یہ ٹول پکسلز کو دوبارہ اینکوڈ کر کے میٹا ڈیٹا (EXIF, GPS, XMP, C2PA) ہٹاتا ہے۔ یہ پکسلز کے اندر چھپے واٹر مارکس کو ختم نہیں کر سکتا۔</string>
+    <string name="tool5_start_button">میٹا ڈیٹا ہٹائیں اور محفوظ کریں</string>
+</resources>

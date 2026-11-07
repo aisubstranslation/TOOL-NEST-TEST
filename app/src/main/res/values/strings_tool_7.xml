@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool7_select_files">Select Files to Hash</string>
+    <string name="tool7_file_picker_hint">Select up to 20 files to compute SHA-256 cryptographic checksums.</string>
+    <string name="tool7_start_button">Generate SHA-256 Hashes</string>
+    <string name="tool7_expected_hash_label">Compare with expected hash</string>
+    <string name="tool7_expected_hash_hint">Paste 64-character hash here</string>
+    <string name="tool7_hash_match">Match ✓</string>
+    <string name="tool7_hash_no_match">Does not match ✗</string>
+    <string name="tool7_copy_hash">Copy</string>
+    <string name="tool7_copy_all">Copy All Hashes</string>
+    <string name="tool7_share_hashes">Share Hashes</string>
+    <string name="tool7_export_txt">Export as .txt</string>
+    <string name="tool7_hash_copied">Hash copied to clipboard</string>
+    <string name="tool7_all_copied">All hashes copied to clipboard</string>
+    <string name="tool7_export_success">Checksums exported successfully</string>
+    <string name="tool7_results_title">Computed SHA-256 Checksums</string>
+    <string name="tool7_process_again">Hash More Files</string>
+</resources>

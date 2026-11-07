@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool18_no_video">चयनित फ़ाइल में कोई वीडियो ट्रैक नहीं है</string>
+    <string name="tool18_picker_title">वीडियो चुनें</string>
+    <string name="tool18_picker_desc">कंप्रेस करने के लिए वीडियो चुनें (MP4, MKV, WebM, MOV, अधिकतम 1000 MB)</string>
+    <string name="tool18_resolution_title">रिज़ॉल्यूशन</string>
+    <string name="tool18_target_resolution">लक्षित: %1$d × %2$d (पहलू अनुपात संरक्षित)</string>
+    <string name="tool18_quality_title">संपीड़न गुणवत्ता</string>
+    <string name="tool18_audio_title">ऑडियो ट्रैक</string>
+    <string name="tool18_audio_keep">मूल बनाए रखें</string>
+    <string name="tool18_audio_remove">ऑडियो हटाएं</string>
+    <string name="tool18_estimate_label">अनुमानित आउटपुट आकार</string>
+    <string name="tool18_little_reduction_warning">इन सेटिंग्स के साथ आकार में बहुत कम या कोई कमी अपेक्षित नहीं है।</string>
+    <string name="tool18_codec_note">अधिकतम डिवाइस संगतता के लिए वीडियो H.264 (MP4) में संपीड़ित किया जाता है।</string>
+    <string name="tool18_ram_note">2 GB रैम वाले फोन पर बड़े वीडियो में समय लग सकता है। आप ऐप छोड़ सकते हैं; प्रगति सूचना में दिखेगी।</string>
+    <string name="tool18_hdr_note">सूचना: HDR वीडियो भिन्न दिख सकते हैं।</string>
+    <string name="tool18_action_compress">वीडियो संपीड़ित करें</string>
+    <string name="tool18_success_title">वीडियो सफलतापूर्वक संपीड़ित किया गया</string>
+    <string name="tool18_size_reduced">%1$d%% की बचत • रिज़ॉल्यूशन: %2$s</string>
+    <string name="tool18_size_larger_warning">सूचना: आउटपुट फ़ाइल मूल से बड़ी है।</string>
+    <string name="tool18_save_gallery">गैलरी में सहेजें</string>
+    <string name="tool18_saved_to_gallery">Movies/TOOLSNEST में सहेजा गया</string>
+    <string name="tool18_play_preview">प्रीव्यू चलाएं</string>
+    <string name="tool18_quality_high">उच्च</string>
+    <string name="tool18_quality_balanced">संतुलित</string>
+    <string name="tool18_quality_small">छोटा</string>
+    <string name="tool18_res_original">मूल</string>
+</resources>

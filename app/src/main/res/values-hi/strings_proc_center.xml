@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Processing Center -->
+    <string name="proc_center_title">प्रोसेसिंग सेंटर</string>
+    <string name="proc_center_card_title">प्रोसेसिंग सेंटर</string>
+    <string name="proc_center_card_active">%1$d सक्रिय पृष्ठभूमि कार्य</string>
+    <string name="proc_center_card_none">कोई पृष्ठभूमि कार्य नहीं चल रहा है</string>
+    <string name="proc_center_empty_title">कोई पृष्ठभूमि कार्य नहीं</string>
+    <string name="proc_center_empty_desc">पृष्ठभूमि में संसाधित होने वाले कार्य और मीडिया फ़ाइलें यहाँ दिखाई देंगी।</string>
+    <string name="proc_section_active">सक्रिय</string>
+    <string name="proc_section_queued">कतार में</string>
+    <string name="proc_section_attention">ध्यान दें</string>
+    <string name="proc_section_completed">पूर्ण</string>
+    <string name="proc_section_cancelled">रद्द</string>
+    <string name="proc_action_details">विवरण</string>
+    <string name="proc_details_title">कार्य विवरण</string>
+    <string name="proc_output_unavailable">आउटपुट फ़ाइल अब कैश में उपलब्ध नहीं है।</string>
+    <string name="proc_remove_title">कार्य हटाएं</string>
+    <string name="proc_remove_confirm_message">क्या आप वाकई इस कार्य को सूची से हटाना चाहते हैं?</string>
+    <string name="proc_remove_warn_unsaved">चेतावनी: फ़ाइल अभी सुरक्षित नहीं की गई है और कैश से हटा दी जाएगी।</string>
+
+    <!-- Media Settings -->
+    <string name="settings_media_title">मीडिया और ऑडियो उपकरण</string>
+    <string name="settings_media_default_format">डिफ़ॉल्ट ऑडियो प्रारूप</string>
+    <string name="settings_media_default_bitrate">डिफ़ॉल्ट AAC बिटरेट</string>
+    <string name="settings_media_bg_notifications">पृष्ठभूमि सूचनाएं</string>
+    <string name="settings_media_bg_notifications_desc">पृष्ठभूमि में कार्य चलने पर प्रगति सूचनाएं दिखाएं</string>
+    <string name="settings_media_delete_after_save">सहेजने के बाद कैश हटाएं</string>
+    <string name="settings_media_delete_after_save_desc">डिवाइस में सहेजने के तुरंत बाद अस्थायी फ़ाइलें हटाएं</string>
+
+    <!-- Common Strings for Tool Shell & Jobs -->
+    <string name="common_output_filename">आउटपुट फ़ाइल का नाम</string>
+    <string name="common_change">बदलें</string>
+    <string name="common_close">बंद करें</string>
+    <string name="common_remove">हटाएं</string>
+</resources>

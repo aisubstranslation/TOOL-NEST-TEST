@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool19_no_audio">चयनित फ़ाइल में कोई ऑडियो ट्रैक नहीं है</string>
+    <string name="tool19_player_error">इस डिवाइस पर ऑडियो का पूर्वावलोकन करने में असमर्थ</string>
+    <string name="tool19_waveform_too_long">60 मिनट से अधिक लंबे ऑडियो के लिए वेवफ़ॉर्म निर्माण छोड़ दिया गया है।</string>
+    <string name="tool19_waveform_failed">वेवफ़ॉर्म उपलब्ध नहीं है। आप अभी भी समय-सीमा के माध्यम से ट्रिम कर सकते हैं।</string>
+    <string name="tool19_picker_title">ऑडियो चुनें</string>
+    <string name="tool19_picker_formats">समर्थित: MP3, WAV, AAC, M4A, FLAC, OGG, OPUS (अधिकतम 500 MB)</string>
+    <string name="tool19_waveform_title">ऑडियो वेवफ़ॉर्म और ट्रिम</string>
+    <string name="tool19_waveform_generating">वेवफ़ॉर्म का विश्लेषण हो रहा है (%1$d%%)…</string>
+    <string name="tool19_preview_selection">पूर्वावलोकन</string>
+    <string name="tool19_trim_points_title">ट्रिम सीमाएं</string>
+    <string name="tool19_start_time">प्रारंभ समय</string>
+    <string name="tool19_end_time">समाप्ति समय</string>
+    <string name="tool19_kept_cut_summary">रखा गया: %1$s (शुरुआत से काटा: %2$s, अंत से काटा: %3$s)</string>
+    <string name="tool19_output_format">आउटपुट प्रारूप</string>
+    <string name="tool19_aac_bitrate">बिटरेट (AAC)</string>
+    <string name="tool19_aac_accuracy_note">सूचना: AAC आउटपुट लगभग एक ऑडियो फ्रेम (लगभग 23 ms) तक सटीक होता है; सहेजी गई लंबाई कुछ मिलीसेकंड भिन्न हो सकती है।</string>
+    <string name="tool19_action_trim">ऑडियो ट्रिम करें</string>
+    <string name="tool19_success_title">ऑडियो सफलतापूर्वक ट्रिम किया गया</string>
+    <string name="tool19_unsaved_dialog_title">परिवर्तन खारिज करें?</string>
+    <string name="tool19_unsaved_dialog_desc">आपके पास सहेजे न गए ट्रिम परिवर्तन हैं। क्या आप वाकई वापस जाना चाहते हैं?</string>
+</resources>

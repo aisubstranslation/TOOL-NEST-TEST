@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool12_picker_title">Select PDF to Compress</string>
+    <string name="tool12_picker_desc">Choose a PDF document to optimize its file size</string>
+    <string name="tool12_mode">Compression Mode</string>
+    <string name="tool12_mode_a_title">Optimize Images (Keeps Text)</string>
+    <string name="tool12_mode_a_desc">Re-compresses embedded raster images while preserving all text and searchability.</string>
+    <string name="tool12_mode_b_title">Maximum Reduction (Pages Become Images)</string>
+    <string name="tool12_mode_b_desc">Converts pages into images. Warning: Text will no longer be selectable or searchable.</string>
+    <string name="tool12_preset">Compression Level</string>
+    <string name="tool12_preset_high">Higher Quality</string>
+    <string name="tool12_preset_balanced">Balanced</string>
+    <string name="tool12_preset_smaller">Smaller File</string>
+    <string name="tool12_btn_compress">Compress PDF</string>
+    <string name="tool12_reduced_label">Reduced by %1$d%% (%2$s to %3$s)</string>
+    <string name="tool12_no_reduction_title">No reduction possible for this file</string>
+    <string name="tool12_no_reduction_desc">This document contains mostly text or already optimized pictures. Output size is not smaller.</string>
+    <string name="tool12_save_anyway">Save Anyway</string>
+</resources>

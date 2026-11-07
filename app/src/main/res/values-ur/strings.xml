@@ -1,0 +1,223 @@
+<resources>
+    <!-- App & Navigation -->
+    <string name="app_name">TOOLSNEST</string>
+    <string name="nav_home">ہوم</string>
+    <string name="nav_categories">زمرہ جات</string>
+    <string name="nav_history">تاریخچہ</string>
+    <string name="nav_settings">ترتیبات</string>
+
+    <!-- Categories -->
+    <string name="category_all">تمام</string>
+    <string name="category_image">تصویر</string>
+    <string name="category_files">فائلیں</string>
+    <string name="category_pdf">پی ڈی ایف</string>
+    <string name="category_video_audio">ویڈیو اور آڈیو</string>
+
+    <!-- Tool 1: Image Compressor -->
+    <string name="tool1_name">تصویر کمپریسر</string>
+    <string name="tool1_desc">معیار برقرار رکھتے ہوئے تصویر کا سائز کم کریں</string>
+
+    <!-- Tool 2: Image Resizer -->
+    <string name="tool2_name">تصویر کا سائز تبدیل کنندہ</string>
+    <string name="tool2_desc">پکسلز یا فیصد کے لحاظ سے تصویر کی لمبائی اور چوڑائی تبدیل کریں</string>
+
+    <!-- Tool 3: Image Converter -->
+    <string name="tool3_name">تصویر کنورٹر</string>
+    <string name="tool3_desc">PNG، JPEG اور WebP فارمیٹس میں تبدیل کریں</string>
+
+    <!-- Tool 4: Image Cropper -->
+    <string name="tool4_name">تصویر تراشیں</string>
+    <string name="tool4_desc">تصاویر کو اپنی مرضی یا مخصوص تناسب میں تراشیں</string>
+
+    <!-- Tool 5: Remove Image Metadata -->
+    <string name="tool5_name">تصویر کا میٹا ڈیٹا ہٹائیں</string>
+    <string name="tool5_desc">EXIF، GPS مقام اور کیمرے کی تفصیلات صاف کریں</string>
+
+    <!-- Tool 6: File Information -->
+    <string name="tool6_name">فائل کی معلومات</string>
+    <string name="tool6_desc">فائل کی خصوصیات، MIME قسم اور سائز کی تفصیلات دیکھیں</string>
+
+    <!-- Tool 7: SHA-256 Hash Generator -->
+    <string name="tool7_name">SHA-256 ہیش جنریٹر</string>
+    <string name="tool7_desc">فائل کی تصدیق کے لیے کرپٹوگرافک ہیش معلوم کریں</string>
+
+    <!-- Tool 8: ZIP Creator -->
+    <string name="tool8_name">ZIP بنانے والا</string>
+    <string name="tool8_desc">متعدد فائلوں کو ایک کمپریسڈ ZIP آرکائیو میں محفوظ کریں</string>
+
+    <!-- Tool 9: QR Code Generator -->
+    <string name="tool9_name">کیو آر کوڈ جنریٹر</string>
+    <string name="tool9_desc">متن، لنکس یا رابطوں سے کیو آر کوڈ بنائیں</string>
+
+    <!-- Tool 10: PDF Merge -->
+    <string name="tool10_name">پی ڈی ایف ضم کنندہ</string>
+    <string name="tool10_desc">متعدد پی ڈی ایف فائلوں کو ایک فائل میں جوڑیں</string>
+
+    <!-- Tool 11: PDF Split -->
+    <string name="tool11_name">پی ڈی ایف تقسیم کنندہ</string>
+    <string name="tool11_desc">مخصوص صفحات الگ کریں یا پی ڈی ایف کے ٹکڑے کریں</string>
+
+    <!-- Tool 12: PDF Compressor -->
+    <string name="tool12_name">پی ڈی ایف کمپریسر</string>
+    <string name="tool12_desc">پی ڈی ایف دستاویزات کا فائل سائز کم کریں</string>
+
+    <!-- Tool 13: PDF to Images -->
+    <string name="tool13_name">پی ڈی ایف سے تصاویر</string>
+    <string name="tool13_desc">ہر پی ڈی ایف صفحے کو اعلیٰ معیار کی تصویر میں تبدیل کریں</string>
+
+    <!-- Tool 14: Images to PDF -->
+    <string name="tool14_name">تصاویر سے پی ڈی ایف</string>
+    <string name="tool14_desc">متعدد تصاویر کو ایک پی ڈی ایف دستاویز میں یکجا کریں</string>
+
+    <!-- Tool 15: Rotate PDF -->
+    <string name="tool15_name">پی ڈی ایف گھمائیں</string>
+    <string name="tool15_desc">پی ڈی ایف صفحات کو 90، 180 یا 270 ڈگری پر گھمائیں</string>
+
+    <!-- Tool 16: Video to Audio -->
+    <string name="tool16_name">ویڈیو سے آڈیو</string>
+    <string name="tool16_desc">ویڈیو فائل سے آڈیو ٹریک نکالیں</string>
+
+    <!-- Tool 17: Audio Converter -->
+    <string name="tool17_name">آڈیو کنورٹر</string>
+    <string name="tool17_desc">آڈیو فائلوں کو مختلف مقبول فارمیٹس میں تبدیل کریں</string>
+
+    <!-- Tool 18: Video Compressor -->
+    <string name="tool18_name">ویڈیو کمپریسر</string>
+    <string name="tool18_desc">بٹ ریٹ کی اصلاح کے ساتھ ویڈیو کا سائز کم کریں</string>
+
+    <!-- Tool 19: Audio Trimmer -->
+    <string name="tool19_name">آڈیو ٹرمر</string>
+    <string name="tool19_desc">آڈیو کلپس کو شروع اور اختتامی نقطوں سے تراشیں</string>
+
+    <!-- Tool 20: AI Background Remover -->
+    <string name="tool20_name">اے آئی پس منظر ہٹانے والا</string>
+    <string name="tool20_desc">ڈیوائس پر خودکار طریقے سے تصویر کا پس منظر ختم کریں</string>
+
+    <!-- Tool Shell & Coming Soon Notice -->
+    <string name="tool_coming_soon">جلد آرہا ہے</string>
+    <string name="tool_coming_in_phase">مرحلہ %1$d میں دستیاب ہوگا</string>
+    <string name="tool_phase_info">یہ ٹول مرحلہ %1$d میں شامل کیا جائے گا۔ اعلیٰ کارکردگی اور آف لائن بھروسے کو یقینی بنانے کے لیے ٹولز مرحلہ وار بنائے جا رہے ہیں۔</string>
+
+    <!-- Home Screen -->
+    <string name="home_search_placeholder">ٹولز، افعال تلاش کریں (مثلاً کمپریس، پی ڈی ایف)...</string>
+    <string name="home_no_results_title">کوئی مماثل ٹول نہیں ملا</string>
+    <string name="home_no_results_desc">مختلف الفاظ کے ساتھ تلاش کریں جیسے "تصویر"، "ضم"، یا "ہیش"۔</string>
+    <string name="home_recent_tools">حالیہ ٹولز</string>
+    <string name="home_all_tools">تمام ٹولز</string>
+    <string name="home_tools_count">%1$d آف لائن ٹولز</string>
+
+    <!-- History Screen -->
+    <string name="history_title">تاریخچہ</string>
+    <string name="history_empty_title">ابھی تک کوئی تاریخچہ نہیں</string>
+    <string name="history_empty_desc">پروسیس شدہ فائلیں اور نتائج یہاں ظاہر ہوں گے۔</string>
+    <string name="history_clear_all">تمام صاف کریں</string>
+    <string name="history_clear_confirm_title">تمام تاریخچہ صاف کریں؟</string>
+    <string name="history_clear_confirm_desc">یہ ایپ سے تمام ریکارڈز مٹا دے گا۔ آپ کی محفوظ کردہ اصل فائلیں ڈیوائس سے حذف نہیں ہوں گی۔</string>
+    <string name="history_delete_item">حذف کریں</string>
+    <string name="history_output_size">نتیجہ</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">ترتیبات</string>
+    <string name="settings_section_appearance">ظاہری شکل</string>
+    <string name="settings_theme_system">سسٹم کے مطابق</string>
+    <string name="settings_theme_light">روشن</string>
+    <string name="settings_theme_dark">تاریک</string>
+    <string name="settings_section_language">زبان</string>
+    <string name="settings_language_system">سسٹم ڈیفالٹ</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_ur">اردو (Urdu)</string>
+    <string name="settings_language_hi">हिन्दी (Hindi)</string>
+    <string name="settings_section_storage">اسٹوریج اور فائلیں</string>
+    <string name="settings_prefix_title">فائل کا سابقہ (Prefix)</string>
+    <string name="settings_prefix_desc">تیار کردہ فائلوں کے شروع میں شامل کیا جانے والا نام (مثلاً TOOLSNEST_)</string>
+    <string name="settings_temp_cache_title">عارضی فائلیں</string>
+    <string name="settings_temp_cache_desc">پروسیسنگ کے دوران بننے والی عارضی فائلیں صاف کریں</string>
+    <string name="settings_temp_cache_clear">عارضی فائلیں صاف کریں</string>
+    <string name="settings_temp_cache_cleared">عارضی فائلیں صاف کر دی گئیں (%1$s خالی ہوا)</string>
+    <string name="settings_section_about">کے بارے میں اور رازداری</string>
+    <string name="settings_about_app_desc" formatted="false">100% آف لائن، مکمل طور پر نجی ٹولز سویٹ</string>
+    <string name="settings_about_version">ورژن 1.0</string>
+    <string name="settings_privacy_title">رازداری کی ضمانت</string>
+    <string name="settings_privacy_desc">TOOLSNEST کو انٹرنیٹ کی اجازت درکار نہیں۔ تمام پروسیسنگ مکمل طور پر آپ کے فون پر ہوتی ہے۔ آپ کا کوئی ڈیٹا فون سے باہر نہیں جاتا۔</string>
+    <string name="settings_help_limits">فائل کی زیادہ سے زیادہ حد: تصویر 50 MB / 48 MP، پی ڈی ایف 150 MB، ویڈیو 1000 MB، آڈیو 500 MB۔ ویڈیو H.264 MP4 میں کمپریس ہوتی ہے۔ HDR ویڈیوز مختلف نظر آ سکتی ہیں۔</string>
+    <string name="settings_help_background_note">نوٹ: ایپ سے باہر نکلنے پر بھی میڈیا اور پس منظر کے کام پروسیسنگ سینٹر میں جاری رہتے ہیں۔</string>
+    <string name="settings_licenses_desc">آپ کی فائلیں آپ کے فون پر رہتی ہیں۔ TOOLSNEST میں اکاؤنٹ نہیں ہوتا اور آپ کی فائلیں کبھی اپ لوڈ نہیں ہوتیں۔</string>
+
+    <!-- Video Settings -->
+    <string name="settings_video_title">ویڈیو ٹولز</string>
+    <string name="settings_video_default_quality">پہلے سے طے شدہ ویڈیو کوالٹی</string>
+    <string name="settings_video_default_quality_desc">ویڈیو کمپریشن کے لیے ٹارگٹ بٹ ریٹ پری سیٹ</string>
+
+    <!-- Errors & Feedback -->
+    <string name="error_generic">ایک غیر متوقع خرابی پیش آئی۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="error_no_app_to_open">اس فائل کو کھولنے کے لیے کوئی ایپ نہیں ملی۔</string>
+    <string name="error_could_not_share">اس فائل کو شیئر نہیں کیا جا سکا۔</string>
+    <string name="file_saved_success">فائل کامیابی سے محفوظ ہو گئی۔</string>
+
+    <!-- Common Action Buttons -->
+    <string name="common_select_file">فائل منتخب کریں</string>
+    <string name="common_cancel">منسوخ کریں</string>
+    <string name="common_save">محفوظ کریں</string>
+    <string name="common_share">شیئر کریں</string>
+    <string name="common_open">کھولیں</string>
+    <string name="common_back">واپس</string>
+    <string name="common_undo">واپس لیں</string>
+    <string name="common_redo">دوبارہ کریں</string>
+    <string name="common_done">مکمل</string>
+    <string name="common_discard">رد کریں</string>
+    <string name="common_save_gallery">گیلری میں محفوظ کریں</string>
+    <string name="common_gallery_api_notice">گیلری میں براہ راست محفوظ کرنے کے لیے Android 10+ درکار ہے۔ براہ کرم عام \'محفوظ کریں\' استعمال کریں۔</string>
+    <string name="common_retry">دوبارہ کوشش کریں</string>
+    <string name="common_process_again">ایک اور فائل تیار کریں</string>
+    <string name="common_file_counter">فائل %1$d از %2$d - %3$s</string>
+    <string name="common_remove_file">فائل ہٹائیں</string>
+    <string name="common_processing">پروسیسنگ جاری ہے...</string>
+    <string name="common_saved_to_gallery">Pictures/TOOLSNEST میں محفوظ کر دیا گیا</string>
+    <string name="crash_dialog_title">TOOLSNEST پچھلی بار غیر متوقع طور پر بند ہو گیا تھا</string>
+    <string name="crash_dialog_desc">مسئلے کی تشخیص کے لیے مقامی رپورٹ تیار کی گئی ہے۔ اس میں کوئی ذاتی ڈیٹا یا فائلوں کے نام شامل نہیں ہیں۔</string>
+    <string name="crash_dialog_copy">رپورٹ کاپی کریں</string>
+    <string name="crash_dialog_delete">رپورٹ حذف کریں</string>
+    <string name="crash_dialog_close">بند کریں</string>
+    <string name="crash_report_copied">کریش رپورٹ کلپ بورڈ پر کاپی ہو گئی</string>
+    <string name="common_job_restored_lost">ایپ بند ہونے کی وجہ سے پچھلا کام ختم ہو گیا تھا۔</string>
+
+    <!-- Step 7: Localized Strings for Image Tools, PDF Rotator, and MediaTransformerEngine (B-13) -->
+    <string name="common_max_images_reached">زیادہ سے زیادہ 20 تصاویر کی حد پوری ہو گئی۔ اضافی تصاویر چھوڑ دی گئیں۔</string>
+    <string name="common_images_recovery_hint">یقینی بنائیں کہ منتخب تصاویر معیاری فارمیٹ (JPEG, PNG, WebP) اور 50 MB و 48 میگا پکسل سے کم ہوں۔</string>
+    <string name="tool1_supported_formats">زیادہ سے زیادہ 20 تصاویر منتخب کریں (JPEG, PNG, WebP)۔ ہر تصویر 50 MB / 48 MP تک۔</string>
+    <string name="tool2_supported_formats">ری سائز کرنے کے لیے 20 تک تصاویر منتخب کریں۔ زیادہ سے زیادہ 48 MP۔</string>
+    <string name="tool3_supported_formats">PNG, JPEG اور WebP میں تبدیل کرنے کے لیے 20 تک تصاویر منتخب کریں۔</string>
+    <string name="tool5_supported_formats">میٹا ڈیٹا چیک کرنے اور ہٹانے کے لیے 20 تک تصاویر منتخب کریں۔</string>
+    <string name="tool15_picker_subtitle">150 MB تک کی پی ڈی ایف دستاویزات</string>
+    <string name="media_stage_processing_aac_pct">AAC پروسیس ہو رہا ہے (%1$d%%)…</string>
+    <string name="media_stage_processing_aac">AAC پروسیس ہو رہا ہے…</string>
+    <string name="media_stage_processing_complete">پروسیسنگ مکمل</string>
+    <string name="media_stage_compressing_video_pct">ویڈیو کمپریس ہو رہی ہے (%1$d%%)…</string>
+    <string name="media_stage_compressing_video">ویڈیو کمپریس ہو رہی ہے…</string>
+    <string name="media_stage_compressing_complete">کمپریشن مکمل</string>
+
+    <!-- Tool 21: PDF Editor -->
+    <string name="tool21_name">پی ڈی ایف ایڈیٹر</string>
+    <string name="tool21_desc">متن شامل کریں، ڈرا کریں، دستخط کریں، صفحات تبدیل کریں</string>
+
+    <!-- Tool 22: AI Image Inspector -->
+    <string name="tool22_name">اے آئی تصویر معائنہ کار</string>
+    <string name="tool22_desc">تصویر میں اے آئی جنریشن، C2PA اور ای ایل اے کے شواہد تلاش کریں</string>
+
+    <!-- Settings & Common shared strings -->
+    <string name="settings_app_version">ورژن %1$s</string>
+    <string name="common_audio_player_error">آڈیو لوڈ کرنے میں ناکامی</string>
+    <string name="common_pages_count_one">1 صفحہ</string>
+    <string name="common_pages_count_other">%1$d صفحات</string>
+    <string name="common_tap_to_open">کھولنے کے لیے ٹیپ کریں</string>
+    <string name="common_tap_to_view">دیکھنے کے لیے ٹیپ کریں</string>
+    <string name="common_failed_load_image">تصویر لوڈ کرنے میں ناکامی</string>
+    <string name="settings_image_title">امیج ٹولز کی ڈیفالٹ سیٹنگز</string>
+    <string name="settings_image_default_format">ڈیفالٹ آؤٹ پٹ فارمیٹ</string>
+    <string name="settings_image_default_quality">ڈیفالٹ JPEG / WebP کوالٹی</string>
+    <string name="settings_pdf_title">PDF اور QR کی ڈیفالٹ سیٹنگز</string>
+    <string name="settings_pdf_page_size">ڈیفالٹ PDF صفحے کا سائز</string>
+    <string name="settings_qr_resolution">ڈیفالٹ QR کوڈ ریزولوشن</string>
+    <string name="settings_media_cache">میڈیا جاب کیش: %1$s</string>
+    <string name="settings_media_unsaved">%1$d مکمل شدہ نتائج جو محفوظ نہیں ہوئے</string>
+</resources>

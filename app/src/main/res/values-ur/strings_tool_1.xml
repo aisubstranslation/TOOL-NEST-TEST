@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool1_quality_label">کمپریشن کوالٹی: %1$d%%</string>
+    <string name="tool1_quality_hint">JPEG اور WebP کے لیے موثر ہے۔ کم قیمت فائل کا سائز کم کرتی ہے۔</string>
+    <string name="tool1_png_note">PNG بغیر معیار کھوئے محفوظ ہوتی ہے، کوالٹی سلائیڈر غیر فعال ہے۔</string>
+    <string name="tool1_resize_toggle">اختیاری سائز تبدیلی</string>
+    <string name="tool1_resize_note">سائز مزید گھٹانے کے لیے لمبائی اور چوڑائی کم کریں</string>
+    <string name="tool1_output_format">آؤٹ پٹ فارمیٹ</string>
+    <string name="tool1_custom_name">آؤٹ پٹ فائل کا نام (اختیاری)</string>
+    <string name="tool1_start_button">تصاویر کمپریس کریں</string>
+</resources>

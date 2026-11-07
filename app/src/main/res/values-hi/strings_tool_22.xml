@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool22_picker_title">निरीक्षण के लिए चित्र चुनें</string>
+    <string name="tool22_picker_desc">एआई निर्माण, C2PA और ईएलए विवरण का पता लगाने के लिए 10 तक चित्र चुनें</string>
+    <string name="tool22_btn_analyze">चित्रों का निरीक्षण करें</string>
+    <string name="tool22_save_report">रिपोर्ट सहेजें</string>
+</resources>

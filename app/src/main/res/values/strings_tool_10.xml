@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool10_picker_title">Select PDF Files</string>
+    <string name="tool10_picker_subtitle">Select 2 or more PDFs (up to 20 files, 300 MB total)</string>
+    <string name="tool10_add_more">Add More PDFs</string>
+    <string name="tool10_move_up">Move Up</string>
+    <string name="tool10_move_down">Move Down</string>
+    <string name="tool10_file_count_header">%1$d files selected (%2$s)</string>
+    <string name="tool10_btn_merge">Merge PDFs</string>
+    <string name="tool10_merging">Merging PDF files…</string>
+    <string name="tool10_success_title">PDFs Merged Successfully</string>
+    <string name="tool10_btn_save">Save PDF</string>
+    <string name="tool10_btn_share">Share</string>
+    <string name="tool10_btn_open">Open</string>
+    <string name="tool10_error_minimum_files">Please select at least 2 PDF files to merge.</string>
+    <string name="tool10_error_max_files">Maximum 20 PDF files can be merged at once.</string>
+    <string name="tool10_error_max_size">Combined PDF size exceeds the 300 MB limit.</string>
+</resources>

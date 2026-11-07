@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tool17_picker_title">ऑडियो फ़ाइल चुनें</string>
+    <string name="tool17_picker_formats">समर्थित: MP3, WAV, AAC, M4A, FLAC, OGG, OPUS</string>
+    <string name="tool17_output_format">आउटपुट प्रारूप</string>
+    <string name="tool17_format_note">M4A (AAC) छोटी फ़ाइलें बनाता है। WAV संपादन के लिए असम्पीडित 16-बिट PCM प्रदान करता है।</string>
+    <string name="tool17_aac_bitrate">बिटरेट (AAC)</string>
+    <string name="tool17_quality_honesty_note">हानिपूर्ण प्रारूप से WAV में बदलने से मूल गुणवत्ता में सुधार नहीं होता, लेकिन हानिहीन प्रतिलिपि बनती है।</string>
+    <string name="tool17_action_convert">ऑडियो बदलें</string>
+    <string name="tool17_err_no_audio">चुनी गई फ़ाइल में कोई डिकोड करने योग्य ऑडियो नहीं है</string>
+    <string name="tool17_success_title">ऑडियो सफलतापूर्वक परिवर्तित किया गया</string>
+</resources>

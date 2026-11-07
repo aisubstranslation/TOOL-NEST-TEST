@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Document symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,36 L43,36 L47,40 L47,52 L34,52 Z" />
+
+    <!-- Wrench symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M49,34 C47.2,34 45.7,35.2 45.2,36.8 L47.8,39.4 C48.2,39.2 48.6,39.1 49,39.1 C49.4,39.1 49.8,39.2 50.2,39.4 L52.8,36.8 C52.3,35.2 50.8,34 49,34 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,39.5 L43,51 L46,52 L51,40.5 Z" />
+
+    <!-- Photo symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,38 L68,38 C69.1,38 70,38.9 70,40 L70,51 C70,52.1 69.1,53 68,53 L54,53 C52.9,53 52,52.1 52,50 L52,40 C52,38.9 52.9,38 54,38 Z" />
+
+    <!-- Music note symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M69,35 L75,33.5 L75,44.5 C74.4,44.2 73.7,44 73,44 C71.3,44 70,45.1 70,46.5 C70,47.9 71.3,49 73,49 C74.7,49 76,47.9 76,46.5 L76,32 L68,34 L68,43 Z" />
+
+    <!-- Nest base -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,58 C27,69.6 39.1,76 54,76 C68.9,76 81,69.6 81,58 C74,62 64.5,64 54,64 C43.5,64 34,62 27,58 Z" />
+
+    <!-- Nest twigs -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M26,57 C34,63 45,66 57,66 C67,66 76,62 82,56" />
+
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M28,62 C37,69 47,72 59,71 C69,70 77,66 80,60" />
+
+</vector>
